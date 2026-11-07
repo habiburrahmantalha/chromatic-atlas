@@ -1,0 +1,487 @@
+/* Chromatic Atlas: opaque sRGB; 12 palettes, light + dark. */
+/* Set data-palette and data-theme on the root. Links require underlines. */
+:root {
+  --font-body: Inter, system-ui, sans-serif;
+  --font-heading: Inter, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+[data-theme="light"] {
+  color-scheme: light;
+  --success-fg: #166534;
+  --success-bg: #DCFCE7;
+  --warning-fg: #854D0E;
+  --warning-bg: #FEF3C7;
+  --error-fg: #991B1B;
+  --error-bg: #FEE2E2;
+  --info-fg: #1E40AF;
+  --info-bg: #DBEAFE;
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --success-fg: #86EFAC;
+  --success-bg: #052E16;
+  --warning-fg: #FDE68A;
+  --warning-bg: #422006;
+  --error-fg: #FCA5A5;
+  --error-bg: #450A0A;
+  --info-fg: #93C5FD;
+  --info-bg: #172554;
+}
+[data-palette="olive"][data-theme="light"] {
+  --canvas: #F1EBDD;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #17251F;
+  --secondary: #344B3A;
+  --primary: #344B3A;
+  --on-primary: #F1EBDD;
+  --hover: #17251F;
+  --pressed: #17251F;
+  --border-strong: #65745A;
+  --border-subtle: #D6C99A;
+  --focus: #344B3A;
+  --selected: #344B3A;
+  --on-selected: #F1EBDD;
+  --subtle: #D6C99A;
+  --on-subtle: #17251F;
+  --link: #344B3A;
+}
+[data-palette="olive"][data-theme="dark"] {
+  --canvas: #17251F;
+  --surface: #344B3A;
+  --raised: #344B3A;
+  --text: #F1EBDD;
+  --secondary: #D6C99A;
+  --primary: #D6C99A;
+  --on-primary: #17251F;
+  --hover: #F1EBDD;
+  --pressed: #D6C99A;
+  --border-strong: #D6C99A;
+  --border-subtle: #65745A;
+  --focus: #D6C99A;
+  --selected: #D6C99A;
+  --on-selected: #17251F;
+  --subtle: #344B3A;
+  --on-subtle: #F1EBDD;
+  --link: #D6C99A;
+}
+[data-palette="berry"][data-theme="light"] {
+  --canvas: #F1DDE0;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #1D1015;
+  --secondary: #702B40;
+  --primary: #702B40;
+  --on-primary: #F1DDE0;
+  --hover: #421B29;
+  --pressed: #1D1015;
+  --border-strong: #A64C61;
+  --border-subtle: #D28B96;
+  --focus: #702B40;
+  --selected: #421B29;
+  --on-selected: #F1DDE0;
+  --subtle: #D28B96;
+  --on-subtle: #1D1015;
+  --link: #702B40;
+}
+[data-palette="berry"][data-theme="dark"] {
+  --canvas: #1D1015;
+  --surface: #421B29;
+  --raised: #421B29;
+  --text: #F1DDE0;
+  --secondary: #D28B96;
+  --primary: #D28B96;
+  --on-primary: #1D1015;
+  --hover: #F1DDE0;
+  --pressed: #D28B96;
+  --border-strong: #D28B96;
+  --border-subtle: #702B40;
+  --focus: #D28B96;
+  --selected: #D28B96;
+  --on-selected: #1D1015;
+  --subtle: #421B29;
+  --on-subtle: #F1DDE0;
+  --link: #D28B96;
+}
+[data-palette="caramel"][data-theme="light"] {
+  --canvas: #F6EEDB;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #211713;
+  --secondary: #78533B;
+  --primary: #78533B;
+  --on-primary: #F6EEDB;
+  --hover: #493126;
+  --pressed: #211713;
+  --border-strong: #78533B;
+  --border-subtle: #E0C58E;
+  --focus: #78533B;
+  --selected: #493126;
+  --on-selected: #F6EEDB;
+  --subtle: #E0C58E;
+  --on-subtle: #211713;
+  --link: #78533B;
+}
+[data-palette="caramel"][data-theme="dark"] {
+  --canvas: #211713;
+  --surface: #493126;
+  --raised: #493126;
+  --text: #F6EEDB;
+  --secondary: #E0C58E;
+  --primary: #E0C58E;
+  --on-primary: #211713;
+  --hover: #F6EEDB;
+  --pressed: #E0C58E;
+  --border-strong: #E0C58E;
+  --border-subtle: #78533B;
+  --focus: #E0C58E;
+  --selected: #E0C58E;
+  --on-selected: #211713;
+  --subtle: #493126;
+  --on-subtle: #F6EEDB;
+  --link: #E0C58E;
+}
+[data-palette="lagoon"][data-theme="light"] {
+  --canvas: #DCE9E8;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #071C27;
+  --secondary: #245568;
+  --primary: #245568;
+  --on-primary: #DCE9E8;
+  --hover: #123747;
+  --pressed: #071C27;
+  --border-strong: #477C8B;
+  --border-subtle: #91B3B9;
+  --focus: #245568;
+  --selected: #123747;
+  --on-selected: #DCE9E8;
+  --subtle: #91B3B9;
+  --on-subtle: #071C27;
+  --link: #245568;
+}
+[data-palette="lagoon"][data-theme="dark"] {
+  --canvas: #071C27;
+  --surface: #123747;
+  --raised: #123747;
+  --text: #DCE9E8;
+  --secondary: #91B3B9;
+  --primary: #91B3B9;
+  --on-primary: #071C27;
+  --hover: #DCE9E8;
+  --pressed: #91B3B9;
+  --border-strong: #91B3B9;
+  --border-subtle: #245568;
+  --focus: #91B3B9;
+  --selected: #91B3B9;
+  --on-selected: #071C27;
+  --subtle: #123747;
+  --on-subtle: #DCE9E8;
+  --link: #91B3B9;
+}
+[data-palette="clay"][data-theme="light"] {
+  --canvas: #F0DFCE;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #211713;
+  --secondary: #76503B;
+  --primary: #76503B;
+  --on-primary: #F0DFCE;
+  --hover: #493027;
+  --pressed: #211713;
+  --border-strong: #A87557;
+  --border-subtle: #D0A98B;
+  --focus: #76503B;
+  --selected: #493027;
+  --on-selected: #F0DFCE;
+  --subtle: #D0A98B;
+  --on-subtle: #211713;
+  --link: #76503B;
+}
+[data-palette="clay"][data-theme="dark"] {
+  --canvas: #211713;
+  --surface: #493027;
+  --raised: #493027;
+  --text: #F0DFCE;
+  --secondary: #D0A98B;
+  --primary: #D0A98B;
+  --on-primary: #211713;
+  --hover: #F0DFCE;
+  --pressed: #D0A98B;
+  --border-strong: #D0A98B;
+  --border-subtle: #76503B;
+  --focus: #D0A98B;
+  --selected: #D0A98B;
+  --on-selected: #211713;
+  --subtle: #493027;
+  --on-subtle: #F0DFCE;
+  --link: #D0A98B;
+}
+[data-palette="slate"][data-theme="light"] {
+  --canvas: #DCE3EF;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #111522;
+  --secondary: #536684;
+  --primary: #303D59;
+  --on-primary: #DCE3EF;
+  --hover: #1E263B;
+  --pressed: #111522;
+  --border-strong: #536684;
+  --border-subtle: #98A9C4;
+  --focus: #303D59;
+  --selected: #1E263B;
+  --on-selected: #DCE3EF;
+  --subtle: #98A9C4;
+  --on-subtle: #111522;
+  --link: #303D59;
+}
+[data-palette="slate"][data-theme="dark"] {
+  --canvas: #111522;
+  --surface: #1E263B;
+  --raised: #303D59;
+  --text: #DCE3EF;
+  --secondary: #98A9C4;
+  --primary: #98A9C4;
+  --on-primary: #111522;
+  --hover: #DCE3EF;
+  --pressed: #98A9C4;
+  --border-strong: #98A9C4;
+  --border-subtle: #303D59;
+  --focus: #98A9C4;
+  --selected: #98A9C4;
+  --on-selected: #111522;
+  --subtle: #303D59;
+  --on-subtle: #DCE3EF;
+  --link: #98A9C4;
+}
+[data-palette="cocoa"][data-theme="light"] {
+  --canvas: #E8D8CE;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #211B1A;
+  --secondary: #60433D;
+  --primary: #60433D;
+  --on-primary: #E8D8CE;
+  --hover: #382A28;
+  --pressed: #211B1A;
+  --border-strong: #916B60;
+  --border-subtle: #C1A094;
+  --focus: #60433D;
+  --selected: #382A28;
+  --on-selected: #E8D8CE;
+  --subtle: #C1A094;
+  --on-subtle: #211B1A;
+  --link: #60433D;
+}
+[data-palette="cocoa"][data-theme="dark"] {
+  --canvas: #211B1A;
+  --surface: #382A28;
+  --raised: #382A28;
+  --text: #E8D8CE;
+  --secondary: #C1A094;
+  --primary: #C1A094;
+  --on-primary: #211B1A;
+  --hover: #E8D8CE;
+  --pressed: #C1A094;
+  --border-strong: #C1A094;
+  --border-subtle: #60433D;
+  --focus: #C1A094;
+  --selected: #C1A094;
+  --on-selected: #211B1A;
+  --subtle: #382A28;
+  --on-subtle: #E8D8CE;
+  --link: #C1A094;
+}
+[data-palette="lavender"][data-theme="light"] {
+  --canvas: #E2DDE7;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #17151C;
+  --secondary: #45404F;
+  --primary: #45404F;
+  --on-primary: #E2DDE7;
+  --hover: #292531;
+  --pressed: #17151C;
+  --border-strong: #716879;
+  --border-subtle: #AAA2B3;
+  --focus: #45404F;
+  --selected: #292531;
+  --on-selected: #E2DDE7;
+  --subtle: #AAA2B3;
+  --on-subtle: #17151C;
+  --link: #45404F;
+}
+[data-palette="lavender"][data-theme="dark"] {
+  --canvas: #17151C;
+  --surface: #292531;
+  --raised: #292531;
+  --text: #E2DDE7;
+  --secondary: #AAA2B3;
+  --primary: #AAA2B3;
+  --on-primary: #17151C;
+  --hover: #E2DDE7;
+  --pressed: #AAA2B3;
+  --border-strong: #AAA2B3;
+  --border-subtle: #45404F;
+  --focus: #AAA2B3;
+  --selected: #AAA2B3;
+  --on-selected: #17151C;
+  --subtle: #292531;
+  --on-subtle: #E2DDE7;
+  --link: #AAA2B3;
+}
+[data-palette="forest"][data-theme="light"] {
+  --canvas: #DAF1DE;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #051F20;
+  --secondary: #235347;
+  --primary: #163832;
+  --on-primary: #DAF1DE;
+  --hover: #0B2B26;
+  --pressed: #051F20;
+  --border-strong: #235347;
+  --border-subtle: #8EB69B;
+  --focus: #163832;
+  --selected: #0B2B26;
+  --on-selected: #DAF1DE;
+  --subtle: #8EB69B;
+  --on-subtle: #051F20;
+  --link: #163832;
+}
+[data-palette="forest"][data-theme="dark"] {
+  --canvas: #051F20;
+  --surface: #0B2B26;
+  --raised: #163832;
+  --text: #DAF1DE;
+  --secondary: #8EB69B;
+  --primary: #8EB69B;
+  --on-primary: #051F20;
+  --hover: #DAF1DE;
+  --pressed: #8EB69B;
+  --border-strong: #8EB69B;
+  --border-subtle: #163832;
+  --focus: #8EB69B;
+  --selected: #8EB69B;
+  --on-selected: #051F20;
+  --subtle: #163832;
+  --on-subtle: #DAF1DE;
+  --link: #8EB69B;
+}
+[data-palette="rose"][data-theme="light"] {
+  --canvas: #F7EFE7;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #3E3239;
+  --secondary: #6B5560;
+  --primary: #6B5560;
+  --on-primary: #F7EFE7;
+  --hover: #3E3239;
+  --pressed: #3E3239;
+  --border-strong: #9E8189;
+  --border-subtle: #E8D2C4;
+  --focus: #6B5560;
+  --selected: #6B5560;
+  --on-selected: #F7EFE7;
+  --subtle: #E8D2C4;
+  --on-subtle: #3E3239;
+  --link: #6B5560;
+}
+[data-palette="rose"][data-theme="dark"] {
+  --canvas: #3E3239;
+  --surface: #6B5560;
+  --raised: #6B5560;
+  --text: #F7EFE7;
+  --secondary: #E8D2C4;
+  --primary: #E8D2C4;
+  --on-primary: #3E3239;
+  --hover: #F7EFE7;
+  --pressed: #E8D2C4;
+  --border-strong: #E8D2C4;
+  --border-subtle: #9E8189;
+  --focus: #E8D2C4;
+  --selected: #E8D2C4;
+  --on-selected: #3E3239;
+  --subtle: #6B5560;
+  --on-subtle: #F7EFE7;
+  --link: #E8D2C4;
+}
+[data-palette="midnight"][data-theme="light"] {
+  --canvas: #CCD0CF;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #06141B;
+  --secondary: #253745;
+  --primary: #253745;
+  --on-primary: #CCD0CF;
+  --hover: #11212D;
+  --pressed: #06141B;
+  --border-strong: #4A5C6A;
+  --border-subtle: #9BA8AB;
+  --focus: #253745;
+  --selected: #11212D;
+  --on-selected: #CCD0CF;
+  --subtle: #9BA8AB;
+  --on-subtle: #06141B;
+  --link: #253745;
+}
+[data-palette="midnight"][data-theme="dark"] {
+  --canvas: #06141B;
+  --surface: #11212D;
+  --raised: #253745;
+  --text: #CCD0CF;
+  --secondary: #9BA8AB;
+  --primary: #9BA8AB;
+  --on-primary: #06141B;
+  --hover: #CCD0CF;
+  --pressed: #9BA8AB;
+  --border-strong: #9BA8AB;
+  --border-subtle: #253745;
+  --focus: #9BA8AB;
+  --selected: #9BA8AB;
+  --on-selected: #06141B;
+  --subtle: #253745;
+  --on-subtle: #CCD0CF;
+  --link: #9BA8AB;
+}
+[data-palette="plum"][data-theme="light"] {
+  --canvas: #E8DDEB;
+  --surface: #FFFFFF;
+  --raised: #FFFFFF;
+  --text: #17121D;
+  --secondary: #51405F;
+  --primary: #51405F;
+  --on-primary: #E8DDEB;
+  --hover: #302538;
+  --pressed: #17121D;
+  --border-strong: #796487;
+  --border-subtle: #B09BB8;
+  --focus: #51405F;
+  --selected: #302538;
+  --on-selected: #E8DDEB;
+  --subtle: #B09BB8;
+  --on-subtle: #17121D;
+  --link: #51405F;
+}
+[data-palette="plum"][data-theme="dark"] {
+  --canvas: #17121D;
+  --surface: #302538;
+  --raised: #302538;
+  --text: #E8DDEB;
+  --secondary: #B09BB8;
+  --primary: #B09BB8;
+  --on-primary: #17121D;
+  --hover: #E8DDEB;
+  --pressed: #B09BB8;
+  --border-strong: #B09BB8;
+  --border-subtle: #51405F;
+  --focus: #B09BB8;
+  --selected: #B09BB8;
+  --on-selected: #17121D;
+  --subtle: #302538;
+  --on-subtle: #E8DDEB;
+  --link: #B09BB8;
+}
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+/* Focus offset must expose the surface; recheck against custom backgrounds. */

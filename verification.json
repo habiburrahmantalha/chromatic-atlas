@@ -1,0 +1,116 @@
+{
+  "native": {
+    "pages": 21,
+    "layers": 3645,
+    "textLayers": 2070,
+    "outOfParentTextBounds": [],
+    "colorBoundLayers": 384,
+    "layerTypes": {
+      "FRAME": 202,
+      "TEXT": 2070,
+      "RECTANGLE": 1349,
+      "COMPONENT": 24
+    },
+    "missingFonts": [],
+    "collections": 14,
+    "variables": 284,
+    "typographyStyles": 8,
+    "buttonComponents": 24,
+    "standaloneDarkInstanceVerified": true
+  },
+  "colors": {
+    "sourceSlots": 72,
+    "uniqueColors": 71,
+    "auditedSourceCombinations": 5041,
+    "passingThemeRoleChecks": 480,
+    "totalThemeRoleChecks": 480,
+    "passingStatusPairs": 8
+  },
+  "method": "Opaque sRGB, classification before rounding; see contrast-audit.json for exact ratios.",
+  "html": {
+    "version": "2.0",
+    "artifact": "color-theme-playground.html",
+    "bytes": 4389615,
+    "sha256": "1c6a2f0316cd27fb5696ae153bdf3daedce7955ffecf1066a39d84a69fefe14f",
+    "browser": "Chrome via CUA on localhost; desktop and 390px phone viewport",
+    "passed": [
+      "Original theme-role audit: all 792 checks pass across 12 palettes, 66 per palette.",
+      "13 core regression groups and 6 workbench integration groups pass in Node.",
+      "Invalid theme hex rejected; a failing #CCCCCC text color produced three failed pairs; suggested #6A6A6A passed and Undo restored the edited value.",
+      "Named preset saved, restored after reload with font/template, renamed with Update loaded, and deleted through confirmation.",
+      "All four screen templates and component gallery render; shopping bag, planner checkboxes and themed dialog exercised.",
+      "All five dropdowns use custom combobox/listbox menus; full labels and selection state checked. Mouse selection, Home/ArrowDown/Enter, typeahead/Enter, Escape and Tab dismissal exercised.",
+      "390px phone layout has no page overflow in live preview, builder and gallery; custom menu fits viewport.",
+      "No browser JavaScript errors observed. Temporary viewport reset; default Olive/Inter/Dashboard restored.",
+      "Screenshot saved as playground-v2-preview.jpg in the chat outputs."
+    ],
+    "limitations": [
+      "Browser import chooser was blocked by the ChatGPT extension file-URL access setting. Import parser/schema/limits are covered by automated tests, but end-to-end file chooser import was not confirmed.",
+      "Browser file-download completion not independently confirmed; export content and serializer behavior tested.",
+      "No full screen-reader, cross-browser or complete WCAG conformance audit."
+    ]
+  },
+  "htmlPreviousVersion": {
+    "version": "1.0",
+    "passed": [
+      "All 12 palette selections update the visible palette heading and both preview modes.",
+      "All six typography choices selectable; six font binaries are embedded with original OFL notices.",
+      "Font inline style escaping fixed and verified; Source Serif 4 visibly renders serif headings.",
+      "Light-only, dark-only, compare show one, one, and two app previews.",
+      "Mobile width option switches preview grid to mobile; 390px browser body scrollWidth equals clientWidth on preview and lab.",
+      "Error feedback selector shows separate semantic foreground/background banner for both modes.",
+      "Contrast #777777 on #FFFFFF displays 4.48 and correctly fails normal-text AA using unrounded ratio.",
+      "Invalid #zzz input produces error and aria-invalid; #000 shorthand on white gives 21.00:1.",
+      "Matrix cell S3 on S6 sets #65745A/#F1EBDD and reports 4.21:1.",
+      "CSS copy verified both theme selectors, actual public font stacks, --font-mono and semantic fg/bg variables; no private Atlas font aliases.",
+      "Clipboard unavailable fallback function unit check passed with simulated rejected clipboard API.",
+      "Local project creation updates both titles and activity feed; task checkboxes and notification setting synchronize.",
+      "Desktop and mobile screenshots visually reviewed for wrapping and layout.",
+      "Initial view restored: Olive & Linen, Inter, Compare, Fluid, Live preview; viewport reset."
+    ],
+    "limitations": [
+      "Browser download-event instrumentation timed out; file-download completion was not independently confirmed. Export content and CSS copying were verified.",
+      "No full screen-reader, cross-browser, or WCAG conformance audit performed.",
+      "Browser screenshots were inspected through CUA; no screenshot file was saved."
+    ]
+  },
+  "workbench": {
+    "rolesPerMode": 17,
+    "modeCount": 2,
+    "auditPairsPerPalette": 66,
+    "originalPaletteChecks": 792,
+    "failedOriginalChecks": 0,
+    "coreTestGroups": 13,
+    "integrationTestGroups": 6,
+    "source": "src/",
+    "testCommand": "node --test tests/*.test.cjs"
+  },
+  "securityReview": {
+    "date": "2026-11-08",
+    "mode": "offline static current-tree review",
+    "reportableVulnerabilities": 0,
+    "credentialFindings": 0,
+    "scope": "Source/build/tests/docs plus targeted bundled-data disclosure checks; no production probes or full binary reverse-engineering.",
+    "followup": "Machine paths removed from current files. Publication uses a clean initial Git history and GitHub noreply commit identity. Original code/documentation use MIT; bundled fonts retain OFL notices.",
+    "historyCredentialPatternCheck": {
+      "commits": 1,
+      "uniqueBlobs": 48,
+      "credentialMatches": 0,
+      "note": "Signature-based check of the pre-cleanup local history found no credential matches. That history was removed from the publication repository."
+    }
+  },
+  "build": {
+    "standaloneEqualsDist": true,
+    "combinedJavaScriptSyntax": "pass",
+    "httpStatus": 200,
+    "contentType": "text/html",
+    "servedBytesMatch": true,
+    "fontDataFaces": 6,
+    "externalScripts": 0
+  },
+  "license": {
+    "project": "MIT",
+    "fonts": "SIL Open Font License 1.1",
+    "embeddedInStandalone": true
+  }
+}

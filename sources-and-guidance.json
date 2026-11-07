@@ -1,0 +1,352 @@
+{
+  "checked_date": "2026-11-08",
+  "scope": "Practical app color and typography guidance. WCAG thresholds are requirements; layout, font pairings, and token advice are design recommendations, not a conformance certification.",
+  "sources": [
+    {
+      "id": "wcag",
+      "title": "WCAG 2.2 recommendation",
+      "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "id": "text",
+      "title": "W3C: Contrast (Minimum), 1.4.3 AA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "id": "enhanced",
+      "title": "W3C: Contrast (Enhanced), 1.4.6 AAA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html"
+    },
+    {
+      "id": "nontext",
+      "title": "W3C: Non-text Contrast, 1.4.11 AA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+    },
+    {
+      "id": "color",
+      "title": "W3C: Use of Color, 1.4.1 A",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+    },
+    {
+      "id": "focus",
+      "title": "W3C: Focus Visible, 2.4.7 AA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html"
+    },
+    {
+      "id": "unobscured",
+      "title": "W3C: Focus Not Obscured (Minimum), 2.4.11 AA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html"
+    },
+    {
+      "id": "focusaaa",
+      "title": "W3C: Focus Appearance, 2.4.13 AAA",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html"
+    },
+    {
+      "id": "appledark",
+      "title": "Apple Human Interface Guidelines: Dark Mode",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
+    },
+    {
+      "id": "applecolor",
+      "title": "Apple Human Interface Guidelines: Color",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/color"
+    },
+    {
+      "id": "material",
+      "title": "Material 3: Color roles",
+      "url": "https://m3.material.io/styles/color/roles"
+    },
+    {
+      "id": "carbon",
+      "title": "Carbon Design System: Legends",
+      "url": "https://www.carbondesignsystem.com/building-blocks/data-visualization/legends"
+    },
+    {
+      "id": "inter",
+      "title": "Inter official family",
+      "url": "https://rsms.me/inter/"
+    },
+    {
+      "id": "manrope",
+      "title": "Manrope official designer release",
+      "url": "https://www.sharanda.com/manrope"
+    },
+    {
+      "id": "serif",
+      "title": "Adobe Source Serif 4",
+      "url": "https://adobe-fonts.github.io/source-serif/"
+    },
+    {
+      "id": "seriflicense",
+      "title": "Source Serif license",
+      "url": "https://github.com/adobe-fonts/source-serif/blob/release/LICENSE.md"
+    },
+    {
+      "id": "plex",
+      "title": "IBM Design Language: Typeface",
+      "url": "https://www.ibm.com/design/language/typography/typeface/"
+    },
+    {
+      "id": "plexrepo",
+      "title": "IBM Plex fonts and licenses",
+      "url": "https://github.com/IBM/plex/"
+    },
+    {
+      "id": "noto",
+      "title": "Noto font families and releases",
+      "url": "https://notofonts.github.io/"
+    },
+    {
+      "id": "bengali",
+      "title": "Noto Bengali official repository",
+      "url": "https://github.com/notofonts/bengali"
+    },
+    {
+      "id": "googlefonts",
+      "title": "Google Fonts official font sources and OFL licenses",
+      "url": "https://github.com/google/fonts"
+    }
+  ],
+  "thresholds": [
+    {
+      "label": "AA normal text",
+      "ratio": 4.5,
+      "guidance": "Use at least 4.5:1 for body text, UI labels, input text, and placeholders.",
+      "source": "text"
+    },
+    {
+      "label": "AA large text",
+      "ratio": 3,
+      "guidance": "At least 3:1 applies only at 24 CSS px regular, or about 18.67 CSS px bold, and larger. Keep 4.5:1 as the practical default.",
+      "source": "text"
+    },
+    {
+      "label": "AAA normal text",
+      "ratio": 7,
+      "guidance": "At least 7:1 is the enhanced target for normal text; large text needs 4.5:1.",
+      "source": "enhanced"
+    },
+    {
+      "label": "Essential controls and graphics",
+      "ratio": 3,
+      "guidance": "Essential control boundaries, states, icons, and graphical information need 3:1 against adjacent colors. Decorative separators and every card edge do not automatically need 3:1.",
+      "source": "nontext"
+    }
+  ],
+  "contrast_notes": [
+    "Contrast is a relationship between two colors, never a property of a swatch alone.",
+    "Classify with the unrounded computed ratio. A displayed value of 4.50 may still fail if the actual ratio is below 4.5.",
+    "Ratios calculated for solid opaque sRGB hex colors do not certify translucent overlays, gradients, images, or the final app.",
+    "For opacity, composite the actual foreground and background first; evaluate the final displayed pair.",
+    "For gradients and images, test the weakest area behind text. A solid text container is easier to validate.",
+    "Inactive controls are exempt from text contrast thresholds, but keep their purpose readable and explain why unavailable. Placeholder text is not a substitute for a persistent label.",
+    "A pass does not guarantee comfortable reading: very thin strokes, small type, glare, and rendering still matter."
+  ],
+  "focus_and_color": [
+    {
+      "kind": "requirement",
+      "text": "Keyboard focus must be visible (2.4.7 AA), and the focused component must not be entirely hidden by authored content (2.4.11 AA).",
+      "sources": [
+        "focus",
+        "unobscured"
+      ]
+    },
+    {
+      "kind": "requirement",
+      "text": "Color must not be the only visual signal. Add words, icons, patterns, position, or underlines to communicate state and meaning.",
+      "sources": [
+        "color"
+      ]
+    },
+    {
+      "kind": "recommended implementation",
+      "text": "Use a solid 2\u20133 px focus outline with an offset and a contrasting inner/outer halo when backgrounds vary. Verify the indicator against every adjacent surface.",
+      "sources": [
+        "nontext"
+      ]
+    },
+    {
+      "kind": "AAA requirement",
+      "text": "2.4.13 Focus Appearance requires indicator area at least equivalent to a 2 CSS px perimeter, and a 3:1 change between the same pixels when focused versus unfocused, subject to its exceptions. This is AAA, not AA.",
+      "sources": [
+        "focusaaa"
+      ]
+    },
+    {
+      "kind": "recommended implementation",
+      "text": "Underline inline links persistently. Pair errors with an icon, message, and field association. Pair selection with a checkmark or shape change.",
+      "sources": [
+        "color"
+      ]
+    }
+  ],
+  "theme_rules": [
+    "Name colors by role in product code: canvas, surface, raised, text, muted, border, primary, onPrimary, focus, success, warning, error, info.",
+    "Keep original palette hex values as primitives; map semantic roles separately in Light and Dark modes.",
+    "Do not mechanically invert hex colors. Dark mode usually uses darker surfaces and lighter text or accents, with separate state values.",
+    "Use one color family as the foundation, one restrained accent, and separate semantic status colors. An accent is not automatically safe for text.",
+    "Pair each colored fill with its matching on-color token. A pale dark-mode primary button usually needs dark label text.",
+    "Evaluate text on canvas, surface, raised surface, selected surface, hover, and pressed states separately.",
+    "Distinguish decorative dividers from essential input borders. A subtle border can decorate a card but must not be the only signal identifying an input.",
+    "Keep status meaning consistent across appearances; adapt the lightness of the color, not the meaning.",
+    "Use lighter surfaces or a border to separate raised dark surfaces where shadows disappear. Avoid flooding all surfaces with the brand hue.",
+    "Respect platform appearance and increased-contrast preferences. Validate in bright and dim environments, on real displays.",
+    "Give links, disabled states, focus, selected controls, errors, charts, overlays, and image treatments explicit tokens before shipping.",
+    "Use any palette personality or product-category suggestion as creative direction, not a universal psychological fact."
+  ],
+  "chart_rules": [
+    "Categorical data: distinct hues plus direct labels and shapes. Do not use the six shades of one family for unrelated categories.",
+    "Sequential data: order a single-hue ramp by measured luminance; communicate direction with labels or a legend.",
+    "Diverging data: two hues around a meaningful midpoint; do not imply a midpoint where none exists.",
+    "Use line dashes, point shapes, textures, and text so hue is never the sole key. Avoid relying on red versus green.",
+    "Check essential marks against their background and adjacent marks. Separators or outlines can clarify boundaries.",
+    "Keep label text contrast separate from chart-mark contrast. Include a written takeaway and an accessible data table.",
+    "Test color-vision simulations and grayscale as additional checks; they do not replace accessible names or keyboard support."
+  ],
+  "fonts": [
+    {
+      "name": "Inter",
+      "role": "Default UI, body, labels, navigation",
+      "weights": "400 body / 500 labels / 600 headings / 700 emphasis",
+      "recommended_for": "Utility apps, dashboards, productivity, finance",
+      "pairing": "Inter alone; optionally add IBM Plex Mono for code and hex values",
+      "fallback": "Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+      "basis": "Designed for computer screens; variable family with useful numeric features.",
+      "source": "inter",
+      "bundled_version": "4.001 (local project font); wght 100\u2013900, opsz 14\u201332"
+    },
+    {
+      "name": "Manrope",
+      "role": "Friendly geometric headings and short UI copy",
+      "weights": "400\u2013500 body / 600\u2013700 headings",
+      "recommended_for": "Lifestyle, wellness, consumer products",
+      "pairing": "Manrope headings + Inter body; or Manrope alone for a compact identity",
+      "fallback": "Manrope, Inter, system-ui, sans-serif",
+      "basis": "A geometric and grotesque blend with semi-rounded forms. Choice of product fit is editorial.",
+      "license_note": "This guide bundles Google Fonts Manrope 4.505 under OFL 1.1. The current designer release V5 has different terms; do not mix versions or assume identical files.",
+      "source": "manrope",
+      "bundled_version": "Google Fonts OFL build 4.505, wght 200\u2013800"
+    },
+    {
+      "name": "Source Serif 4",
+      "role": "Editorial headings, reading content, premium storytelling",
+      "weights": "400 reading / 600 headings",
+      "recommended_for": "Books, journals, culture, long-form content",
+      "pairing": "Source Serif 4 headings + Inter UI; Source Serif 4 reading text + Inter controls",
+      "fallback": "Source Serif 4, Georgia, serif",
+      "basis": "Optical sizes and Latin, Greek, and Cyrillic coverage; use text optical sizes for reading and display sizes for large headings.",
+      "license_note": "Official release uses SIL Open Font License 1.1; keep the license with redistributed fonts.",
+      "sources": [
+        "serif",
+        "seriflicense"
+      ],
+      "bundled_version": "4.004, wght 200\u2013900, opsz 8\u201360"
+    },
+    {
+      "name": "IBM Plex Sans",
+      "role": "Technical product UI, labels, tables and dashboard content",
+      "weights": "400 body / 500 labels / 600 headings",
+      "recommended_for": "Developer tools, analytics, enterprise applications",
+      "pairing": "IBM Plex Sans UI + IBM Plex Mono for code and technical labels",
+      "fallback": "IBM Plex Sans, Inter, system-ui, sans-serif",
+      "basis": "Part of the coordinated IBM Plex superfamily; product-category fit is an editorial recommendation.",
+      "source": "plex",
+      "bundled_version": "3.201, wght 100\u2013700, wdth 75\u2013100"
+    },
+    {
+      "name": "IBM Plex Mono",
+      "role": "Code, hex values, IDs, compact numeric annotations",
+      "weights": "400 regular / 500\u2013600 emphasis",
+      "recommended_for": "Developer tools and technical reference labels",
+      "pairing": "Inter UI + IBM Plex Mono detail",
+      "fallback": "IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "basis": "IBM's monospaced family fits glyphs to equal advance widths; use sparingly for dense prose.",
+      "sources": [
+        "plex",
+        "plexrepo"
+      ],
+      "bundled_version": "2.3, static Regular"
+    },
+    {
+      "name": "Noto Sans / Noto Sans Bengali",
+      "role": "Script coverage and multilingual UI",
+      "weights": "400 body / 500 labels / 600 headings",
+      "recommended_for": "Localized applications with script-specific fallback needs",
+      "pairing": "Noto Sans for Latin and Noto Sans Bengali for Bangla content",
+      "fallback": "Noto Sans Bengali, Noto Sans, system-ui, sans-serif",
+      "basis": "Choose the correct Noto family per script. Validate real translated strings, shaping, numerals, line heights, and clipping; glyph coverage is not proof of layout quality.",
+      "source": "bengali"
+    }
+  ],
+  "type_scale_recommendation": [
+    {
+      "role": "Display",
+      "size": 48,
+      "line_height": 56,
+      "weight": 600
+    },
+    {
+      "role": "Page title",
+      "size": 32,
+      "line_height": 40,
+      "weight": 600
+    },
+    {
+      "role": "Section",
+      "size": 24,
+      "line_height": 32,
+      "weight": 600
+    },
+    {
+      "role": "Card title",
+      "size": 20,
+      "line_height": 28,
+      "weight": 600
+    },
+    {
+      "role": "Body",
+      "size": 16,
+      "line_height": 24,
+      "weight": 400
+    },
+    {
+      "role": "Label",
+      "size": 14,
+      "line_height": 20,
+      "weight": 500
+    },
+    {
+      "role": "Caption",
+      "size": 12,
+      "line_height": 16,
+      "weight": 400
+    },
+    {
+      "role": "Code / hex",
+      "size": 13,
+      "line_height": 20,
+      "weight": 400
+    }
+  ],
+  "typography_notes": [
+    "This scale is a starting recommendation, not a WCAG minimum font-size rule. Use scalable units in implementation and support platform text sizing.",
+    "Use 16\u201318 px for sustained reading, 1.45\u20131.6 line height, and roughly 45\u201375 characters per line as starting design targets.",
+    "Use 400\u2013600 for normal UI; avoid ultra-light body text. Test mixed scripts and real device rendering.",
+    "Keep captions for secondary metadata. Never shrink essential instructions to make a layout fit.",
+    "Use tabular numerals for tables and aligned metrics; do not force all body text into monospace.",
+    "Limit an app to one main family plus one purposeful companion. Use spacing, size, and weight for hierarchy before adding families.",
+    "Install the exact family and weights used by the design. Verify fallback metrics and retain license files in implementation."
+  ],
+  "release_checklist": [
+    "Check every actual text/background token pair in both themes using unrounded ratios.",
+    "Inspect default, hover, pressed, focused, selected, error, success, loading, and disabled states.",
+    "Check focus against all surfaces and ensure it remains visible while scrolling.",
+    "Check status meaning without color and chart meaning without hue.",
+    "Check translucency, overlays, gradients, images, and composited colors at their weakest point.",
+    "Test text enlargement, fallback fonts, translated strings, clipping, and line wrapping.",
+    "Check high contrast or forced-color modes and platform appearance preference behavior.",
+    "Inspect on real devices in bright and dim environments. Recheck after any token or opacity change."
+  ],
+  "font_bundle_note": "Fonts live in work/fonts for authoring; no global installation. All five downloaded or copied files are valid TrueType fonts. Their OFL text and source manifest accompany the files. Noto Bengali is a suggested fallback and is not bundled."
+}

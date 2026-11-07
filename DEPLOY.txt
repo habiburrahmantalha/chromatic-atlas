@@ -1,0 +1,78 @@
+CHROMATIC ATLAS — STATIC DEPLOYMENT
+Playground 2.0
+
+The playground is a static site. It needs no application server, database,
+package install, environment variables or runtime API. Deployment to a production
+server is a separate step; this document does not indicate that it is deployed.
+
+BUILD
+Run from the repository root:
+    python3 build-site.py
+
+Publish directory: dist
+Entry point: index.html
+Build dependency: Python 3 standard library only.
+
+The build combines src/index.html, styles and JavaScript modules with
+theme-tokens.json, fonts/ and font-licenses/. It writes both the standalone
+color-theme-playground.html and dist/index.html. Edit src/ and rebuild rather
+than editing generated HTML. If the host has no build step, build locally and
+upload dist/index.html.
+
+CHECKS
+Run the dependency-free tests with a current Node.js installation:
+    node --test tests/*.test.cjs
+
+Tests cover contrast math and thresholds, all 792 original live-audit
+relationships, safe suggestions, preset validation, imports and storage errors.
+Workbench regression checks cover exported audit results and preset associations.
+See verification.json for the recorded checks and browser-validation scope.
+File-download completion must not be inferred from a successful build or from
+inspection of export content. Check downloads in the target browser as needed.
+
+LOCAL PREVIEW
+    python3 -m http.server 8080 --bind 127.0.0.1 --directory dist
+Open http://127.0.0.1:8080 and stop the server with Ctrl+C when finished.
+This development command is not a production server recommendation.
+
+SERVER SETTINGS
+Serve index.html as text/html with UTF-8 over HTTPS.
+Set dist as the public document root. The native design archive, source reference
+files and Git metadata are not required on the public web server.
+Enable gzip or Brotli compression for the roughly 4.4 MB uncompressed HTML.
+Let index.html revalidate instead of assigning an immutable cache lifetime.
+No SPA rewrite rules or server routes are needed.
+If adding a Content Security Policy, account for inline scripts/styles, dynamic
+style attributes and embedded data: fonts. A policy that blocks these features
+will break this self-contained build.
+
+PERSISTENCE AND BEHAVIOR
+Working theme drafts, font/template choices and named presets use localStorage.
+Storage belongs to a browser profile and origin. A different domain, protocol,
+port or browser profile has a separate library. Direct file:// storage behavior
+varies by browser, so use a stable local-server origin for regular editing.
+Export presets before moving the site or clearing browser data; import them on
+the new origin. There is no cross-device synchronization or server-side backup.
+Blocked/full storage shows a notice and leaves editing available in the tab.
+
+The library accepts up to 50 presets; imported JSON is limited to 250,000 bytes
+and validated before use. Export current preset/library files can be imported.
+Download tokens JSON is a separate implementation export with current audit
+results, not an importable preset file.
+
+Sample projects, tasks, shopping bags, reading controls and planner interactions
+are demo state and reset on reload. Invitation controls send no messages and
+shopping controls process no payments. There is no sign-in, account system,
+collaboration, analytics or backend.
+
+Fonts, code, palette data and license notices are embedded for offline use.
+External source links open documentation only when clicked. Clipboard permissions
+vary by browser; copying has a fallback. Exports use browser-managed Blob downloads.
+Custom browser themes do not automatically change the native FigCraft archive.
+
+REPOSITORY AND RELEASE
+Native atlas, fonts/licenses, original tokens/audits, previews and editable
+playground source are tracked. dist is reproducible and ignored; the duplicate
+distribution ZIP is also ignored. Use Git history for implementation changes.
+After deployment, check the real URL for a successful page load, font rendering,
+theme editing, reload persistence, preset import/export and download behavior.

@@ -1,0 +1,327 @@
+{
+  "title": "Chromatic Atlas",
+  "version": "2.0",
+  "nativeAtlasVersion": "1.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 81,
+      "sha256": "66d3a38e07437336fe594497aa3c60ff50631da89608b937fd40c000d6f90af3"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 69,
+      "sha256": "910957f2edb0e345294392f955267c0297e338a82bc632cb2dba7392751250b0"
+    },
+    {
+      "path": "DEPLOY.txt",
+      "bytes": 4059,
+      "sha256": "6015f42bbb30e58a27cbd1870700caaa64fe9da99d39cfbbb0e0b76b17dff66a"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1075,
+      "sha256": "cd904723b041397d5a4adf7ebb6dd6430f5defc2177845d19c516b312970dc12"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2418,
+      "sha256": "777864b5a48a4818482f48e95094a145d712ecc11a460aebda028d3f5ced5e1d"
+    },
+    {
+      "path": "START-HERE.txt",
+      "bytes": 6675,
+      "sha256": "1f53ca7cc64b18a22bd2a69f6b81dfe8d98d45492bd6e7331af7d900c6844bae"
+    },
+    {
+      "path": "all-color-pairs.csv",
+      "bytes": 255510,
+      "sha256": "12c666d7037017ec0f8d24f51cbd1cd9d77b2c95e10a7cd485a047f874bc4d69"
+    },
+    {
+      "path": "build-site.py",
+      "bytes": 2433,
+      "sha256": "4301527c48b43a3c444968e05e0b1d81e22708f7f2b0eaa2f3bb9844fd57b2cd"
+    },
+    {
+      "path": "chromatic-atlas.figcraft",
+      "bytes": 198053,
+      "sha256": "2cdf632207e5e7fa2003c388e3e545201611ad7760f8193e36d4900324cca2a1"
+    },
+    {
+      "path": "color-theme-playground.html",
+      "bytes": 4389615,
+      "sha256": "1c6a2f0316cd27fb5696ae153bdf3daedce7955ffecf1066a39d84a69fefe14f"
+    },
+    {
+      "path": "contrast-audit.json",
+      "bytes": 230643,
+      "sha256": "bd7355bd6be22835ecaf4ba65c5f586a804d0241e1111bcf75d267ff19e86aa4"
+    },
+    {
+      "path": "figcraft-variables.json",
+      "bytes": 257440,
+      "sha256": "4f34257d49ca7f111164585d84374ffab4a0a062949ae5009103bedf9ca47fc2"
+    },
+    {
+      "path": "font-licenses/IBMPlexMono-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "font-licenses/IBMPlexSans-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "font-licenses/Inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "font-licenses/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "font-licenses/PlusJakartaSans-OFL.txt",
+      "bytes": 4402,
+      "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99"
+    },
+    {
+      "path": "font-licenses/SourceSerif4-OFL.txt",
+      "bytes": 4400,
+      "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
+    },
+    {
+      "path": "font-licenses/sources.json",
+      "bytes": 3151,
+      "sha256": "07c4b729af7da96b5498f025989824566b598c45d6f854b37dd979f63944989e"
+    },
+    {
+      "path": "fonts/IBMPlexMono.ttf",
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "fonts/IBMPlexSans.ttf",
+      "bytes": 537244,
+      "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3"
+    },
+    {
+      "path": "fonts/Inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "fonts/Manrope.ttf",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "path": "fonts/PlusJakartaSans.ttf",
+      "bytes": 176288,
+      "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8"
+    },
+    {
+      "path": "fonts/SourceSerif4.ttf",
+      "bytes": 1209508,
+      "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b"
+    },
+    {
+      "path": "playground-audit.json",
+      "bytes": 232084,
+      "sha256": "54f7877d2ed6c047c9b27d145f7690ed5204a569600a6a0fcf1f6536d76436e1"
+    },
+    {
+      "path": "previews/00.png",
+      "bytes": 310792,
+      "sha256": "8ae6c7022b7b637a55b0415ce075fe769d833a020a018322125431c18e4f66fc"
+    },
+    {
+      "path": "previews/01.png",
+      "bytes": 279674,
+      "sha256": "31effb070ca07aa00632ede9f99ce389c9f170bf79259700d47bc5c7f4987906"
+    },
+    {
+      "path": "previews/02.png",
+      "bytes": 346101,
+      "sha256": "3ec7a537f3542264586106dd17de31c45bb29af9a05e3e136bac2f00575eaacb"
+    },
+    {
+      "path": "previews/03.png",
+      "bytes": 361280,
+      "sha256": "1d75bd7781435dd371a4cecaa2a1fa9d8a9d9fbe4fd325326aaf37e0f4b6d14d"
+    },
+    {
+      "path": "previews/04.png",
+      "bytes": 426871,
+      "sha256": "7ea407aa2c689f9c790a05d8051a87ccbf785b16a0c332bedaba0be0c4ea2cef"
+    },
+    {
+      "path": "previews/05.png",
+      "bytes": 426028,
+      "sha256": "45ac2fd6515010291a62c67a76e38f8eb41b4e510365f850cb84137d1fdc0932"
+    },
+    {
+      "path": "previews/06.png",
+      "bytes": 428149,
+      "sha256": "bff78f9232c36c2def1ad733b7a2ada3025392268e243a618a095a1e17244389"
+    },
+    {
+      "path": "previews/07.png",
+      "bytes": 430379,
+      "sha256": "837e8b8decde35cc5ed944c7e456e0cbe85ed81e1f9ff51ece9b62e950fa6c3a"
+    },
+    {
+      "path": "previews/08.png",
+      "bytes": 425855,
+      "sha256": "883432b6ca5eb6856d1ddad585a61fc1e29746cc723f44c0b90763bef363c15a"
+    },
+    {
+      "path": "previews/09.png",
+      "bytes": 431032,
+      "sha256": "e4badc02c5b2fd0099788753943ba0a579a98fc78db2991b511f86293dc896db"
+    },
+    {
+      "path": "previews/10.png",
+      "bytes": 428726,
+      "sha256": "199c8675f9407193c1bacdbe753799705640c1630c9f4975bfbd911de759b107"
+    },
+    {
+      "path": "previews/11.png",
+      "bytes": 424152,
+      "sha256": "2852c8976a2f21d633527779db8029e86770ee43c72c04958fb2bc111ccf4a8f"
+    },
+    {
+      "path": "previews/12.png",
+      "bytes": 428770,
+      "sha256": "33159d65718988a812700cce23defde8104fd8b43824d930b4355a2d9c0a723a"
+    },
+    {
+      "path": "previews/13.png",
+      "bytes": 427155,
+      "sha256": "aa7d26c1234796afe1ff8e30e6b0c2c8df4f4809d5dfddf1b3f312b3ddb9b851"
+    },
+    {
+      "path": "previews/14.png",
+      "bytes": 431539,
+      "sha256": "d53d32301e694e252bfc9caf9544f5064b66241d7513b4cda33edcb0e1ffb994"
+    },
+    {
+      "path": "previews/15.png",
+      "bytes": 420056,
+      "sha256": "845564d28bc74d82b52c3d57220560d4eb62dbe18189e94eabb6e9e61e24d368"
+    },
+    {
+      "path": "previews/16.png",
+      "bytes": 345070,
+      "sha256": "589429ee85cc8431c561b9847035ff0b1ff1add52fbf0b34a1d7cb917b144768"
+    },
+    {
+      "path": "previews/17.png",
+      "bytes": 372671,
+      "sha256": "202106eb85319be541a4bc7ef34939cb4d5a5cd7c949f4a31599a828657ac675"
+    },
+    {
+      "path": "previews/18.png",
+      "bytes": 375604,
+      "sha256": "879fc41cd31b615b0c7474f87ac701eeaf04ec0672d637bec9b6ec056c274f56"
+    },
+    {
+      "path": "previews/19.png",
+      "bytes": 440888,
+      "sha256": "a4f444bab42711e9727074257373151e368628585738b62f0249898eca00a524"
+    },
+    {
+      "path": "previews/20.png",
+      "bytes": 438471,
+      "sha256": "ef4409731d8f5e93709530756ff17940e450ee50fe1779333d74032d88b4386c"
+    },
+    {
+      "path": "previews/playground-v2.jpg",
+      "bytes": 121711,
+      "sha256": "daf992ac655fb76e238f10d9c8764e1474cfac1e01df371a45f5deed29328477"
+    },
+    {
+      "path": "sources-and-guidance.json",
+      "bytes": 16084,
+      "sha256": "1c6cf0479f2d1d8417f16b4057483a277631a5f5282b59a9cc87122f7eb1f22b"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 16320,
+      "sha256": "75e39d015fdd4e962660ed73e630dea4696323fe941ca96654058230c47b5a28"
+    },
+    {
+      "path": "src/index.html",
+      "bytes": 19717,
+      "sha256": "d6fae7bde9e4491e026835b64f70b4e12fc3018f99b45cef90412a4a2d187f2e"
+    },
+    {
+      "path": "src/screens.css",
+      "bytes": 22672,
+      "sha256": "78ba65bcf978b2aabb5b64d8384ce23b0a2640391718452280c6b8adf7200c79"
+    },
+    {
+      "path": "src/screens.js",
+      "bytes": 28089,
+      "sha256": "bf214fbaa42032fc699758b767434667ebe61422494d0ad375898bae502db080"
+    },
+    {
+      "path": "src/select-ui.css",
+      "bytes": 3594,
+      "sha256": "2b42e43ee8ea24b1b1276e68e016ef5261ddb1ec6374c6b94ae5c745a96ddb14"
+    },
+    {
+      "path": "src/select-ui.js",
+      "bytes": 10085,
+      "sha256": "dbc329556fea4e4dcfa82d97c964ff5ffad07ee88c56c08aeb0825081c489322"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 26009,
+      "sha256": "850a8936a63049bc3cd4365f99f2c8fe67f69b446463763f1ff79ab3a8ed950c"
+    },
+    {
+      "path": "src/theme-core.js",
+      "bytes": 10175,
+      "sha256": "0c93db20313346ac55a9ef824e49be3247209ffd41a4178f9c226bdf3f66fac7"
+    },
+    {
+      "path": "src/workbench.css",
+      "bytes": 7216,
+      "sha256": "9cf2b755147d656fc5cb26589362af01beb42c81293d7fd799c794f8d95a2416"
+    },
+    {
+      "path": "src/workbench.js",
+      "bytes": 22824,
+      "sha256": "afcb36eb63b3aeb3f258bdc2dd14a5033049c2ec9b623698f492b990a5cb4e4c"
+    },
+    {
+      "path": "tests/theme-core.test.cjs",
+      "bytes": 9422,
+      "sha256": "f9aa4f40690953aa7fb4bf49f948e5cd95426884e18a1d0556143264d1578458"
+    },
+    {
+      "path": "tests/workbench.test.cjs",
+      "bytes": 8846,
+      "sha256": "052c6ef2db80708ad664be52e437b7d691ba754442ade1baa6f7396fa306558f"
+    },
+    {
+      "path": "theme-tokens.css",
+      "bytes": 11297,
+      "sha256": "3b4f2515c242b492438550c54e118f69c8fc0abd0fa02676a420a3669026c9b5"
+    },
+    {
+      "path": "theme-tokens.json",
+      "bytes": 94882,
+      "sha256": "f827ae6d409059e1af0f37410f2e4fb5d45ba645c6fc9a7851752ea4b10e2872"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 5878,
+      "sha256": "d887e500e5085958ab6e0beaed714b3ef2c6bc93c3d8a89a84eb54a57cb77aac"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve reference artifact bytes so manifest hashes survive checkout.
+* -text

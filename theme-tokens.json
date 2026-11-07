@@ -1,0 +1,3411 @@
+{
+  "title": "Chromatic Atlas",
+  "version": "1.0",
+  "date": "2026-11-08",
+  "summary": {
+    "screenshots": 14,
+    "unique_palettes": 12,
+    "palette_entries": 72,
+    "unique_hex": 71,
+    "duplicates": [
+      {
+        "images": [
+          11,
+          13
+        ],
+        "palette": "midnight"
+      },
+      {
+        "images": [
+          10,
+          14
+        ],
+        "palette": "rose"
+      }
+    ],
+    "shared_hex": [
+      {
+        "hex": "#211713",
+        "palettes": [
+          "caramel",
+          "clay"
+        ]
+      }
+    ],
+    "source_transcription_notes": [
+      "Image 3 has #493126 and #78533B; Image 5 instead has #493027 and #76503B. Preserve both distinct ramps.",
+      "Image 9 Stop 4 is #235347 (not #235347 with an extra digit); forest jump from Stop 4 to Stop 5 is unusually large.",
+      "Image 11/13 final stop is #CCD0CF (zero in D0), not #CCDOCF.",
+      "Image 10/14 final stop is #F7EFE7.",
+      "Hex labels are the source of truth; photographed/processed pixel colors include gradients, shadows and compression."
+    ],
+    "matrix_cell_count": 432,
+    "undirected_distinct_pairs": 180
+  },
+  "method": {
+    "space": "opaque sRGB",
+    "formula": "WCAG relative luminance; linearization cutoff 0.04045; (Llight+0.05)/(Ldark+0.05)",
+    "classification": "Classified with full precision, displayed to two decimals. AAA >=7, AA >=4.5, large/UI >=3, fail <3. Large text >=24 CSS px regular or >=18.67 CSS px bold. UI threshold applies to identifying information, not every decorative divider.",
+    "reference": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "limitation": "Numbers apply to solid supplied HEX values, not screenshot pixels with lighting/gradient overlays."
+  },
+  "palettes": [
+    {
+      "id": "olive",
+      "name": "Olive & Linen",
+      "colors": [
+        "#17251F",
+        "#344B3A",
+        "#65745A",
+        "#A6A078",
+        "#D6C99A",
+        "#F1EBDD"
+      ],
+      "sources": [
+        1
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.6759,
+          3.1791,
+          5.9969,
+          9.6003,
+          13.376
+        ],
+        [
+          1.6759,
+          1.0,
+          1.897,
+          3.5784,
+          5.7286,
+          7.9816
+        ],
+        [
+          3.1791,
+          1.897,
+          1.0,
+          1.8863,
+          3.0198,
+          4.2074
+        ],
+        [
+          5.9969,
+          3.5784,
+          1.8863,
+          1.0,
+          1.6009,
+          2.2305
+        ],
+        [
+          9.6003,
+          5.7286,
+          3.0198,
+          1.6009,
+          1.0,
+          1.3933
+        ],
+        [
+          13.376,
+          7.9816,
+          4.2074,
+          2.2305,
+          1.3933,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#17251F",
+          "luminance": 0.016042,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#17251F",
+            "ratio": 1.3208,
+            "display": "1.32:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#17251F",
+            "ratio": 15.8989,
+            "display": "15.90:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#344B3A",
+          "luminance": 0.060677,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#344B3A",
+            "ratio": 2.2135,
+            "display": "2.21:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#344B3A",
+            "ratio": 9.4871,
+            "display": "9.49:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#65745A",
+          "luminance": 0.159957,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#65745A",
+            "ratio": 4.1991,
+            "display": "4.20:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#65745A",
+            "ratio": 5.001,
+            "display": "5.00:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#A6A078",
+          "luminance": 0.346047,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#A6A078",
+            "ratio": 7.9209,
+            "display": "7.92:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#A6A078",
+            "ratio": 2.6512,
+            "display": "2.65:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S5",
+          "hex": "#D6C99A",
+          "luminance": 0.584025,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#D6C99A",
+            "ratio": 12.6805,
+            "display": "12.68:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#D6C99A",
+            "ratio": 1.6561,
+            "display": "1.66:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#F1EBDD",
+          "luminance": 0.833379,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#F1EBDD",
+            "ratio": 17.6676,
+            "display": "17.67:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#F1EBDD",
+            "ratio": 1.1886,
+            "display": "1.19:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Grounded / botanical",
+      "use": "Wellness, food, mindful tools",
+      "companion": "berry",
+      "light": {
+        "canvas": "#F1EBDD",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#17251F",
+        "secondary": "#344B3A",
+        "primary": "#344B3A",
+        "onPrimary": "#F1EBDD",
+        "hover": "#17251F",
+        "pressed": "#17251F",
+        "borderStrong": "#65745A",
+        "borderSubtle": "#D6C99A",
+        "focus": "#344B3A",
+        "selected": "#344B3A",
+        "onSelected": "#F1EBDD",
+        "subtle": "#D6C99A",
+        "onSubtle": "#17251F",
+        "link": "#344B3A"
+      },
+      "dark": {
+        "canvas": "#17251F",
+        "surface": "#344B3A",
+        "raised": "#344B3A",
+        "text": "#F1EBDD",
+        "secondary": "#D6C99A",
+        "primary": "#D6C99A",
+        "onPrimary": "#17251F",
+        "hover": "#F1EBDD",
+        "pressed": "#D6C99A",
+        "borderStrong": "#D6C99A",
+        "borderSubtle": "#65745A",
+        "focus": "#D6C99A",
+        "selected": "#D6C99A",
+        "onSelected": "#17251F",
+        "subtle": "#344B3A",
+        "onSubtle": "#F1EBDD",
+        "link": "#D6C99A"
+      }
+    },
+    {
+      "id": "berry",
+      "name": "Berry & Blush",
+      "colors": [
+        "#1D1015",
+        "#421B29",
+        "#702B40",
+        "#A64C61",
+        "#D28B96",
+        "#F1DDE0"
+      ],
+      "sources": [
+        2
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.2491,
+          1.8542,
+          3.366,
+          6.9239,
+          14.2097
+        ],
+        [
+          1.2491,
+          1.0,
+          1.4844,
+          2.6948,
+          5.5432,
+          11.3761
+        ],
+        [
+          1.8542,
+          1.4844,
+          1.0,
+          1.8154,
+          3.7342,
+          7.6637
+        ],
+        [
+          3.366,
+          2.6948,
+          1.8154,
+          1.0,
+          2.057,
+          4.2215
+        ],
+        [
+          6.9239,
+          5.5432,
+          3.7342,
+          2.057,
+          1.0,
+          2.0523
+        ],
+        [
+          14.2097,
+          11.3761,
+          7.6637,
+          4.2215,
+          2.0523,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#1D1015",
+          "luminance": 0.006859,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#1D1015",
+            "ratio": 1.1372,
+            "display": "1.14:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#1D1015",
+            "ratio": 18.4666,
+            "display": "18.47:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#421B29",
+          "luminance": 0.021022,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#421B29",
+            "ratio": 1.4204,
+            "display": "1.42:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#421B29",
+            "ratio": 14.7841,
+            "display": "14.78:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#702B40",
+          "luminance": 0.055427,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#702B40",
+            "ratio": 2.1085,
+            "display": "2.11:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#702B40",
+            "ratio": 9.9595,
+            "display": "9.96:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#A64C61",
+          "luminance": 0.141389,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#A64C61",
+            "ratio": 3.8278,
+            "display": "3.83:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#A64C61",
+            "ratio": 5.4862,
+            "display": "5.49:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#D28B96",
+          "luminance": 0.343689,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#D28B96",
+            "ratio": 7.8738,
+            "display": "7.87:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#D28B96",
+            "ratio": 2.6671,
+            "display": "2.67:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#F1DDE0",
+          "luminance": 0.757955,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#F1DDE0",
+            "ratio": 16.1591,
+            "display": "16.16:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#F1DDE0",
+            "ratio": 1.2996,
+            "display": "1.30:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Expressive / intimate",
+      "use": "Culture, beauty, creative portfolios",
+      "companion": "olive",
+      "light": {
+        "canvas": "#F1DDE0",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#1D1015",
+        "secondary": "#702B40",
+        "primary": "#702B40",
+        "onPrimary": "#F1DDE0",
+        "hover": "#421B29",
+        "pressed": "#1D1015",
+        "borderStrong": "#A64C61",
+        "borderSubtle": "#D28B96",
+        "focus": "#702B40",
+        "selected": "#421B29",
+        "onSelected": "#F1DDE0",
+        "subtle": "#D28B96",
+        "onSubtle": "#1D1015",
+        "link": "#702B40"
+      },
+      "dark": {
+        "canvas": "#1D1015",
+        "surface": "#421B29",
+        "raised": "#421B29",
+        "text": "#F1DDE0",
+        "secondary": "#D28B96",
+        "primary": "#D28B96",
+        "onPrimary": "#1D1015",
+        "hover": "#F1DDE0",
+        "pressed": "#D28B96",
+        "borderStrong": "#D28B96",
+        "borderSubtle": "#702B40",
+        "focus": "#D28B96",
+        "selected": "#D28B96",
+        "onSelected": "#1D1015",
+        "subtle": "#421B29",
+        "onSubtle": "#F1DDE0",
+        "link": "#D28B96"
+      }
+    },
+    {
+      "id": "caramel",
+      "name": "Caramel & Cream",
+      "colors": [
+        "#211713",
+        "#493126",
+        "#78533B",
+        "#B18A62",
+        "#E0C58E",
+        "#F6EEDB"
+      ],
+      "sources": [
+        3
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.4629,
+          2.5898,
+          5.5833,
+          10.4849,
+          15.1854
+        ],
+        [
+          1.4629,
+          1.0,
+          1.7703,
+          3.8165,
+          7.167,
+          10.38
+        ],
+        [
+          2.5898,
+          1.7703,
+          1.0,
+          2.1559,
+          4.0485,
+          5.8635
+        ],
+        [
+          5.5833,
+          3.8165,
+          2.1559,
+          1.0,
+          1.8779,
+          2.7198
+        ],
+        [
+          10.4849,
+          7.167,
+          4.0485,
+          1.8779,
+          1.0,
+          1.4483
+        ],
+        [
+          15.1854,
+          10.38,
+          5.8635,
+          2.7198,
+          1.4483,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#211713",
+          "luminance": 0.009831,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#211713",
+            "ratio": 1.1966,
+            "display": "1.20:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#211713",
+            "ratio": 17.5493,
+            "display": "17.55:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#493126",
+          "luminance": 0.03753,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#493126",
+            "ratio": 1.7506,
+            "display": "1.75:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#493126",
+            "ratio": 11.9958,
+            "display": "12.00:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#78533B",
+          "luminance": 0.104953,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#78533B",
+            "ratio": 3.0991,
+            "display": "3.10:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#78533B",
+            "ratio": 6.7762,
+            "display": "6.78:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#B18A62",
+          "luminance": 0.284059,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#B18A62",
+            "ratio": 6.6812,
+            "display": "6.68:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#B18A62",
+            "ratio": 3.1432,
+            "display": "3.14:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S5",
+          "hex": "#E0C58E",
+          "luminance": 0.577328,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#E0C58E",
+            "ratio": 12.5466,
+            "display": "12.55:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#E0C58E",
+            "ratio": 1.6738,
+            "display": "1.67:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#F6EEDB",
+          "luminance": 0.858564,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#F6EEDB",
+            "ratio": 18.1713,
+            "display": "18.17:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#F6EEDB",
+            "ratio": 1.1557,
+            "display": "1.16:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Warm / crafted",
+      "use": "Hospitality, shopping, lifestyle",
+      "companion": "lagoon",
+      "light": {
+        "canvas": "#F6EEDB",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#211713",
+        "secondary": "#78533B",
+        "primary": "#78533B",
+        "onPrimary": "#F6EEDB",
+        "hover": "#493126",
+        "pressed": "#211713",
+        "borderStrong": "#78533B",
+        "borderSubtle": "#E0C58E",
+        "focus": "#78533B",
+        "selected": "#493126",
+        "onSelected": "#F6EEDB",
+        "subtle": "#E0C58E",
+        "onSubtle": "#211713",
+        "link": "#78533B"
+      },
+      "dark": {
+        "canvas": "#211713",
+        "surface": "#493126",
+        "raised": "#493126",
+        "text": "#F6EEDB",
+        "secondary": "#E0C58E",
+        "primary": "#E0C58E",
+        "onPrimary": "#211713",
+        "hover": "#F6EEDB",
+        "pressed": "#E0C58E",
+        "borderStrong": "#E0C58E",
+        "borderSubtle": "#78533B",
+        "focus": "#E0C58E",
+        "selected": "#E0C58E",
+        "onSelected": "#211713",
+        "subtle": "#493126",
+        "onSubtle": "#F6EEDB",
+        "link": "#E0C58E"
+      }
+    },
+    {
+      "id": "lagoon",
+      "name": "Lagoon & Mist",
+      "colors": [
+        "#071C27",
+        "#123747",
+        "#245568",
+        "#477C8B",
+        "#91B3B9",
+        "#DCE9E8"
+      ],
+      "sources": [
+        4
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.3809,
+          2.1374,
+          3.756,
+          7.7651,
+          14.0016
+        ],
+        [
+          1.3809,
+          1.0,
+          1.5478,
+          2.72,
+          5.6233,
+          10.1396
+        ],
+        [
+          2.1374,
+          1.5478,
+          1.0,
+          1.7573,
+          3.633,
+          6.5509
+        ],
+        [
+          3.756,
+          2.72,
+          1.7573,
+          1.0,
+          2.0674,
+          3.7278
+        ],
+        [
+          7.7651,
+          5.6233,
+          3.633,
+          2.0674,
+          1.0,
+          1.8031
+        ],
+        [
+          14.0016,
+          10.1396,
+          6.5509,
+          3.7278,
+          1.8031,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#071C27",
+          "luminance": 0.010222,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#071C27",
+            "ratio": 1.2044,
+            "display": "1.20:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#071C27",
+            "ratio": 17.4356,
+            "display": "17.44:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#123747",
+          "luminance": 0.033159,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#123747",
+            "ratio": 1.6632,
+            "display": "1.66:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#123747",
+            "ratio": 12.6264,
+            "display": "12.63:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#245568",
+          "luminance": 0.078715,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#245568",
+            "ratio": 2.5743,
+            "display": "2.57:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#245568",
+            "ratio": 8.1575,
+            "display": "8.16:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#477C8B",
+          "luminance": 0.17619,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#477C8B",
+            "ratio": 4.5238,
+            "display": "4.52:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#477C8B",
+            "ratio": 4.6421,
+            "display": "4.64:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#91B3B9",
+          "luminance": 0.417627,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#91B3B9",
+            "ratio": 9.3525,
+            "display": "9.35:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#91B3B9",
+            "ratio": 2.2454,
+            "display": "2.25:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#DCE9E8",
+          "luminance": 0.793197,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#DCE9E8",
+            "ratio": 16.8639,
+            "display": "16.86:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#DCE9E8",
+            "ratio": 1.2453,
+            "display": "1.25:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Clear / composed",
+      "use": "Productivity, services, dashboards",
+      "companion": "caramel",
+      "light": {
+        "canvas": "#DCE9E8",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#071C27",
+        "secondary": "#245568",
+        "primary": "#245568",
+        "onPrimary": "#DCE9E8",
+        "hover": "#123747",
+        "pressed": "#071C27",
+        "borderStrong": "#477C8B",
+        "borderSubtle": "#91B3B9",
+        "focus": "#245568",
+        "selected": "#123747",
+        "onSelected": "#DCE9E8",
+        "subtle": "#91B3B9",
+        "onSubtle": "#071C27",
+        "link": "#245568"
+      },
+      "dark": {
+        "canvas": "#071C27",
+        "surface": "#123747",
+        "raised": "#123747",
+        "text": "#DCE9E8",
+        "secondary": "#91B3B9",
+        "primary": "#91B3B9",
+        "onPrimary": "#071C27",
+        "hover": "#DCE9E8",
+        "pressed": "#91B3B9",
+        "borderStrong": "#91B3B9",
+        "borderSubtle": "#245568",
+        "focus": "#91B3B9",
+        "selected": "#91B3B9",
+        "onSelected": "#071C27",
+        "subtle": "#123747",
+        "onSubtle": "#DCE9E8",
+        "link": "#91B3B9"
+      }
+    },
+    {
+      "id": "clay",
+      "name": "Clay & Sand",
+      "colors": [
+        "#211713",
+        "#493027",
+        "#76503B",
+        "#A87557",
+        "#D0A98B",
+        "#F0DFCE"
+      ],
+      "sources": [
+        5
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.4502,
+          2.4911,
+          4.4685,
+          8.1312,
+          13.4974
+        ],
+        [
+          1.4502,
+          1.0,
+          1.7177,
+          3.0812,
+          5.6069,
+          9.3072
+        ],
+        [
+          2.4911,
+          1.7177,
+          1.0,
+          1.7938,
+          3.2641,
+          5.4182
+        ],
+        [
+          4.4685,
+          3.0812,
+          1.7938,
+          1.0,
+          1.8197,
+          3.0206
+        ],
+        [
+          8.1312,
+          5.6069,
+          3.2641,
+          1.8197,
+          1.0,
+          1.66
+        ],
+        [
+          13.4974,
+          9.3072,
+          5.4182,
+          3.0206,
+          1.66,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#211713",
+          "luminance": 0.009831,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#211713",
+            "ratio": 1.1966,
+            "display": "1.20:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#211713",
+            "ratio": 17.5493,
+            "display": "17.55:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#493027",
+          "luminance": 0.036769,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#493027",
+            "ratio": 1.7354,
+            "display": "1.74:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#493027",
+            "ratio": 12.1012,
+            "display": "12.10:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#76503B",
+          "luminance": 0.099046,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#76503B",
+            "ratio": 2.9809,
+            "display": "2.98:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#76503B",
+            "ratio": 7.0448,
+            "display": "7.04:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#A87557",
+          "luminance": 0.217355,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#A87557",
+            "ratio": 5.3471,
+            "display": "5.35:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#A87557",
+            "ratio": 3.9274,
+            "display": "3.93:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S5",
+          "hex": "#D0A98B",
+          "luminance": 0.436499,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#D0A98B",
+            "ratio": 9.73,
+            "display": "9.73:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#D0A98B",
+            "ratio": 2.1583,
+            "display": "2.16:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#F0DFCE",
+          "luminance": 0.757568,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#F0DFCE",
+            "ratio": 16.1514,
+            "display": "16.15:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#F0DFCE",
+            "ratio": 1.3002,
+            "display": "1.30:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Earthy / familiar",
+      "use": "Home, journaling, local services",
+      "companion": "slate",
+      "light": {
+        "canvas": "#F0DFCE",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#211713",
+        "secondary": "#76503B",
+        "primary": "#76503B",
+        "onPrimary": "#F0DFCE",
+        "hover": "#493027",
+        "pressed": "#211713",
+        "borderStrong": "#A87557",
+        "borderSubtle": "#D0A98B",
+        "focus": "#76503B",
+        "selected": "#493027",
+        "onSelected": "#F0DFCE",
+        "subtle": "#D0A98B",
+        "onSubtle": "#211713",
+        "link": "#76503B"
+      },
+      "dark": {
+        "canvas": "#211713",
+        "surface": "#493027",
+        "raised": "#493027",
+        "text": "#F0DFCE",
+        "secondary": "#D0A98B",
+        "primary": "#D0A98B",
+        "onPrimary": "#211713",
+        "hover": "#F0DFCE",
+        "pressed": "#D0A98B",
+        "borderStrong": "#D0A98B",
+        "borderSubtle": "#76503B",
+        "focus": "#D0A98B",
+        "selected": "#D0A98B",
+        "onSelected": "#211713",
+        "subtle": "#493027",
+        "onSubtle": "#F0DFCE",
+        "link": "#D0A98B"
+      }
+    },
+    {
+      "id": "slate",
+      "name": "Slate & Ice",
+      "colors": [
+        "#111522",
+        "#1E263B",
+        "#303D59",
+        "#536684",
+        "#98A9C4",
+        "#DCE3EF"
+      ],
+      "sources": [
+        6
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.2092,
+          1.6786,
+          3.1204,
+          7.6307,
+          14.1026
+        ],
+        [
+          1.2092,
+          1.0,
+          1.3882,
+          2.5806,
+          6.3108,
+          11.6632
+        ],
+        [
+          1.6786,
+          1.3882,
+          1.0,
+          1.8589,
+          4.5459,
+          8.4014
+        ],
+        [
+          3.1204,
+          2.5806,
+          1.8589,
+          1.0,
+          2.4454,
+          4.5195
+        ],
+        [
+          7.6307,
+          6.3108,
+          4.5459,
+          2.4454,
+          1.0,
+          1.8481
+        ],
+        [
+          14.1026,
+          11.6632,
+          8.4014,
+          4.5195,
+          1.8481,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#111522",
+          "luminance": 0.00771,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#111522",
+            "ratio": 1.1542,
+            "display": "1.15:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#111522",
+            "ratio": 18.1944,
+            "display": "18.19:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#1E263B",
+          "luminance": 0.01978,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#1E263B",
+            "ratio": 1.3956,
+            "display": "1.40:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#1E263B",
+            "ratio": 15.0473,
+            "display": "15.05:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#303D59",
+          "luminance": 0.046871,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#303D59",
+            "ratio": 1.9374,
+            "display": "1.94:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#303D59",
+            "ratio": 10.8391,
+            "display": "10.84:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#536684",
+          "luminance": 0.130077,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#536684",
+            "ratio": 3.6015,
+            "display": "3.60:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#536684",
+            "ratio": 5.8308,
+            "display": "5.83:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#98A9C4",
+          "luminance": 0.390369,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#98A9C4",
+            "ratio": 8.8074,
+            "display": "8.81:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#98A9C4",
+            "ratio": 2.3844,
+            "display": "2.38:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#DCE3EF",
+          "luminance": 0.763858,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#DCE3EF",
+            "ratio": 16.2772,
+            "display": "16.28:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#DCE3EF",
+            "ratio": 1.2902,
+            "display": "1.29:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Quiet / professional",
+      "use": "Utilities, workspaces, information",
+      "companion": "clay",
+      "light": {
+        "canvas": "#DCE3EF",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#111522",
+        "secondary": "#536684",
+        "primary": "#303D59",
+        "onPrimary": "#DCE3EF",
+        "hover": "#1E263B",
+        "pressed": "#111522",
+        "borderStrong": "#536684",
+        "borderSubtle": "#98A9C4",
+        "focus": "#303D59",
+        "selected": "#1E263B",
+        "onSelected": "#DCE3EF",
+        "subtle": "#98A9C4",
+        "onSubtle": "#111522",
+        "link": "#303D59"
+      },
+      "dark": {
+        "canvas": "#111522",
+        "surface": "#1E263B",
+        "raised": "#303D59",
+        "text": "#DCE3EF",
+        "secondary": "#98A9C4",
+        "primary": "#98A9C4",
+        "onPrimary": "#111522",
+        "hover": "#DCE3EF",
+        "pressed": "#98A9C4",
+        "borderStrong": "#98A9C4",
+        "borderSubtle": "#303D59",
+        "focus": "#98A9C4",
+        "selected": "#98A9C4",
+        "onSelected": "#111522",
+        "subtle": "#303D59",
+        "onSubtle": "#DCE3EF",
+        "link": "#98A9C4"
+      }
+    },
+    {
+      "id": "cocoa",
+      "name": "Cocoa & Taupe",
+      "colors": [
+        "#211B1A",
+        "#382A28",
+        "#60433D",
+        "#916B60",
+        "#C1A094",
+        "#E8D8CE"
+      ],
+      "sources": [
+        7
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.2375,
+          1.915,
+          3.6203,
+          7.0558,
+          12.2495
+        ],
+        [
+          1.2375,
+          1.0,
+          1.5475,
+          2.9255,
+          5.7017,
+          9.8987
+        ],
+        [
+          1.915,
+          1.5475,
+          1.0,
+          1.8905,
+          3.6845,
+          6.3967
+        ],
+        [
+          3.6203,
+          2.9255,
+          1.8905,
+          1.0,
+          1.949,
+          3.3836
+        ],
+        [
+          7.0558,
+          5.7017,
+          3.6845,
+          1.949,
+          1.0,
+          1.7361
+        ],
+        [
+          12.2495,
+          9.8987,
+          6.3967,
+          3.3836,
+          1.7361,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#211B1A",
+          "luminance": 0.011818,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#211B1A",
+            "ratio": 1.2364,
+            "display": "1.24:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#211B1A",
+            "ratio": 16.9854,
+            "display": "16.99:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#382A28",
+          "luminance": 0.026499,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#382A28",
+            "ratio": 1.53,
+            "display": "1.53:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#382A28",
+            "ratio": 13.7257,
+            "display": "13.73:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#60433D",
+          "luminance": 0.06838,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#60433D",
+            "ratio": 2.3676,
+            "display": "2.37:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#60433D",
+            "ratio": 8.8697,
+            "display": "8.87:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#916B60",
+          "luminance": 0.173797,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#916B60",
+            "ratio": 4.4759,
+            "display": "4.48:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#916B60",
+            "ratio": 4.6918,
+            "display": "4.69:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#C1A094",
+          "luminance": 0.386172,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#C1A094",
+            "ratio": 8.7234,
+            "display": "8.72:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#C1A094",
+            "ratio": 2.4073,
+            "display": "2.41:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#E8D8CE",
+          "luminance": 0.707238,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#E8D8CE",
+            "ratio": 15.1448,
+            "display": "15.14:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#E8D8CE",
+            "ratio": 1.3866,
+            "display": "1.39:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Soft / tactile",
+      "use": "Editorial, home, lifestyle",
+      "companion": "forest",
+      "light": {
+        "canvas": "#E8D8CE",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#211B1A",
+        "secondary": "#60433D",
+        "primary": "#60433D",
+        "onPrimary": "#E8D8CE",
+        "hover": "#382A28",
+        "pressed": "#211B1A",
+        "borderStrong": "#916B60",
+        "borderSubtle": "#C1A094",
+        "focus": "#60433D",
+        "selected": "#382A28",
+        "onSelected": "#E8D8CE",
+        "subtle": "#C1A094",
+        "onSubtle": "#211B1A",
+        "link": "#60433D"
+      },
+      "dark": {
+        "canvas": "#211B1A",
+        "surface": "#382A28",
+        "raised": "#382A28",
+        "text": "#E8D8CE",
+        "secondary": "#C1A094",
+        "primary": "#C1A094",
+        "onPrimary": "#211B1A",
+        "hover": "#E8D8CE",
+        "pressed": "#C1A094",
+        "borderStrong": "#C1A094",
+        "borderSubtle": "#60433D",
+        "focus": "#C1A094",
+        "selected": "#C1A094",
+        "onSelected": "#211B1A",
+        "subtle": "#382A28",
+        "onSubtle": "#E8D8CE",
+        "link": "#C1A094"
+      }
+    },
+    {
+      "id": "lavender",
+      "name": "Lavender & Ash",
+      "colors": [
+        "#17151C",
+        "#292531",
+        "#45404F",
+        "#716879",
+        "#AAA2B3",
+        "#E2DDE7"
+      ],
+      "sources": [
+        8
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.2092,
+          1.809,
+          3.411,
+          7.349,
+          13.5551
+        ],
+        [
+          1.2092,
+          1.0,
+          1.496,
+          2.8208,
+          6.0775,
+          11.2098
+        ],
+        [
+          1.809,
+          1.496,
+          1.0,
+          1.8856,
+          4.0624,
+          7.4931
+        ],
+        [
+          3.411,
+          2.8208,
+          1.8856,
+          1.0,
+          2.1545,
+          3.9739
+        ],
+        [
+          7.349,
+          6.0775,
+          4.0624,
+          2.1545,
+          1.0,
+          1.8445
+        ],
+        [
+          13.5551,
+          11.2098,
+          7.4931,
+          3.9739,
+          1.8445,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#17151C",
+          "luminance": 0.008023,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#17151C",
+            "ratio": 1.1605,
+            "display": "1.16:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#17151C",
+            "ratio": 18.0962,
+            "display": "18.10:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#292531",
+          "luminance": 0.020163,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#292531",
+            "ratio": 1.4033,
+            "display": "1.40:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#292531",
+            "ratio": 14.9651,
+            "display": "14.97:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#45404F",
+          "luminance": 0.054965,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#45404F",
+            "ratio": 2.0993,
+            "display": "2.10:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#45404F",
+            "ratio": 10.0033,
+            "display": "10.00:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#716879",
+          "luminance": 0.147918,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#716879",
+            "ratio": 3.9584,
+            "display": "3.96:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#716879",
+            "ratio": 5.3052,
+            "display": "5.31:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#AAA2B3",
+          "luminance": 0.376414,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#AAA2B3",
+            "ratio": 8.5283,
+            "display": "8.53:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#AAA2B3",
+            "ratio": 2.4624,
+            "display": "2.46:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#E2DDE7",
+          "luminance": 0.736512,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#E2DDE7",
+            "ratio": 15.7302,
+            "display": "15.73:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#E2DDE7",
+            "ratio": 1.335,
+            "display": "1.34:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Neutral / restrained",
+      "use": "Content, tools, galleries",
+      "companion": "rose",
+      "light": {
+        "canvas": "#E2DDE7",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#17151C",
+        "secondary": "#45404F",
+        "primary": "#45404F",
+        "onPrimary": "#E2DDE7",
+        "hover": "#292531",
+        "pressed": "#17151C",
+        "borderStrong": "#716879",
+        "borderSubtle": "#AAA2B3",
+        "focus": "#45404F",
+        "selected": "#292531",
+        "onSelected": "#E2DDE7",
+        "subtle": "#AAA2B3",
+        "onSubtle": "#17151C",
+        "link": "#45404F"
+      },
+      "dark": {
+        "canvas": "#17151C",
+        "surface": "#292531",
+        "raised": "#292531",
+        "text": "#E2DDE7",
+        "secondary": "#AAA2B3",
+        "primary": "#AAA2B3",
+        "onPrimary": "#17151C",
+        "hover": "#E2DDE7",
+        "pressed": "#AAA2B3",
+        "borderStrong": "#AAA2B3",
+        "borderSubtle": "#45404F",
+        "focus": "#AAA2B3",
+        "selected": "#AAA2B3",
+        "onSelected": "#17151C",
+        "subtle": "#292531",
+        "onSubtle": "#E2DDE7",
+        "link": "#AAA2B3"
+      }
+    },
+    {
+      "id": "forest",
+      "name": "Forest & Mint",
+      "colors": [
+        "#051F20",
+        "#0B2B26",
+        "#163832",
+        "#235347",
+        "#8EB69B",
+        "#DAF1DE"
+      ],
+      "sources": [
+        9
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.1344,
+          1.3454,
+          1.9617,
+          7.6143,
+          14.402
+        ],
+        [
+          1.1344,
+          1.0,
+          1.186,
+          1.7292,
+          6.712,
+          12.6952
+        ],
+        [
+          1.3454,
+          1.186,
+          1.0,
+          1.4581,
+          5.6595,
+          10.7045
+        ],
+        [
+          1.9617,
+          1.7292,
+          1.4581,
+          1.0,
+          3.8815,
+          7.3416
+        ],
+        [
+          7.6143,
+          6.712,
+          5.6595,
+          3.8815,
+          1.0,
+          1.8914
+        ],
+        [
+          14.402,
+          12.6952,
+          10.7045,
+          7.3416,
+          1.8914,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#051F20",
+          "luminance": 0.011165,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#051F20",
+            "ratio": 1.2233,
+            "display": "1.22:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#051F20",
+            "ratio": 17.1666,
+            "display": "17.17:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#0B2B26",
+          "luminance": 0.019388,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#0B2B26",
+            "ratio": 1.3878,
+            "display": "1.39:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#0B2B26",
+            "ratio": 15.1322,
+            "display": "15.13:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#163832",
+          "luminance": 0.032292,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#163832",
+            "ratio": 1.6458,
+            "display": "1.65:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#163832",
+            "ratio": 12.7594,
+            "display": "12.76:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#235347",
+          "luminance": 0.069988,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#235347",
+            "ratio": 2.3998,
+            "display": "2.40:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#235347",
+            "ratio": 8.7509,
+            "display": "8.75:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#8EB69B",
+          "luminance": 0.415732,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#8EB69B",
+            "ratio": 9.3146,
+            "display": "9.31:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#8EB69B",
+            "ratio": 2.2545,
+            "display": "2.25:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#DAF1DE",
+          "luminance": 0.830899,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#DAF1DE",
+            "ratio": 17.618,
+            "display": "17.62:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#DAF1DE",
+            "ratio": 1.192,
+            "display": "1.19:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Restful / natural",
+      "use": "Wellness, outdoor, sustainable retail",
+      "companion": "cocoa",
+      "light": {
+        "canvas": "#DAF1DE",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#051F20",
+        "secondary": "#235347",
+        "primary": "#163832",
+        "onPrimary": "#DAF1DE",
+        "hover": "#0B2B26",
+        "pressed": "#051F20",
+        "borderStrong": "#235347",
+        "borderSubtle": "#8EB69B",
+        "focus": "#163832",
+        "selected": "#0B2B26",
+        "onSelected": "#DAF1DE",
+        "subtle": "#8EB69B",
+        "onSubtle": "#051F20",
+        "link": "#163832"
+      },
+      "dark": {
+        "canvas": "#051F20",
+        "surface": "#0B2B26",
+        "raised": "#163832",
+        "text": "#DAF1DE",
+        "secondary": "#8EB69B",
+        "primary": "#8EB69B",
+        "onPrimary": "#051F20",
+        "hover": "#DAF1DE",
+        "pressed": "#8EB69B",
+        "borderStrong": "#8EB69B",
+        "borderSubtle": "#163832",
+        "focus": "#8EB69B",
+        "selected": "#8EB69B",
+        "onSelected": "#051F20",
+        "subtle": "#163832",
+        "onSubtle": "#DAF1DE",
+        "link": "#8EB69B"
+      }
+    },
+    {
+      "id": "rose",
+      "name": "Rose & Oat",
+      "colors": [
+        "#3E3239",
+        "#6B5560",
+        "#9E8189",
+        "#C7A9A3",
+        "#E8D2C4",
+        "#F7EFE7"
+      ],
+      "sources": [
+        10,
+        14
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.7984,
+          3.462,
+          5.5998,
+          8.3986,
+          10.7289
+        ],
+        [
+          1.7984,
+          1.0,
+          1.9251,
+          3.1138,
+          4.6701,
+          5.9659
+        ],
+        [
+          3.462,
+          1.9251,
+          1.0,
+          1.6175,
+          2.426,
+          3.0991
+        ],
+        [
+          5.5998,
+          3.1138,
+          1.6175,
+          1.0,
+          1.4998,
+          1.9159
+        ],
+        [
+          8.3986,
+          4.6701,
+          2.426,
+          1.4998,
+          1.0,
+          1.2775
+        ],
+        [
+          10.7289,
+          5.9659,
+          3.0991,
+          1.9159,
+          1.2775,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#3E3239",
+          "luminance": 0.036007,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#3E3239",
+            "ratio": 1.7201,
+            "display": "1.72:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#3E3239",
+            "ratio": 12.2082,
+            "display": "12.21:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#6B5560",
+          "luminance": 0.104673,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#6B5560",
+            "ratio": 3.0935,
+            "display": "3.09:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#6B5560",
+            "ratio": 6.7885,
+            "display": "6.79:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#9E8189",
+          "luminance": 0.247758,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#9E8189",
+            "ratio": 5.9552,
+            "display": "5.96:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#9E8189",
+            "ratio": 3.5264,
+            "display": "3.53:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S4",
+          "hex": "#C7A9A3",
+          "luminance": 0.431624,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#C7A9A3",
+            "ratio": 9.6325,
+            "display": "9.63:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#C7A9A3",
+            "ratio": 2.1801,
+            "display": "2.18:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S5",
+          "hex": "#E8D2C4",
+          "luminance": 0.672345,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#E8D2C4",
+            "ratio": 14.4469,
+            "display": "14.45:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#E8D2C4",
+            "ratio": 1.4536,
+            "display": "1.45:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#F7EFE7",
+          "luminance": 0.872767,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#F7EFE7",
+            "ratio": 18.4553,
+            "display": "18.46:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#F7EFE7",
+            "ratio": 1.1379,
+            "display": "1.14:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "This ramp begins relatively light. Stop 3 on Stop 6 fails normal text AA; use Stop 2 for light primary and secondary text. Pale secondary text on dark surface Stop 2 needs Stop 5 or Stop 6. Stop 4 on Stop 2 is only large/UI. Dark raised Stop 3 cannot carry either Stop 1 or Stop 6 at normal-text AA; reuse Stop 2 or add a derived darker raised surface.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Warm / editorial",
+      "use": "Reading, personal planning, boutiques",
+      "companion": "midnight",
+      "light": {
+        "canvas": "#F7EFE7",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#3E3239",
+        "secondary": "#6B5560",
+        "primary": "#6B5560",
+        "onPrimary": "#F7EFE7",
+        "hover": "#3E3239",
+        "pressed": "#3E3239",
+        "borderStrong": "#9E8189",
+        "borderSubtle": "#E8D2C4",
+        "focus": "#6B5560",
+        "selected": "#6B5560",
+        "onSelected": "#F7EFE7",
+        "subtle": "#E8D2C4",
+        "onSubtle": "#3E3239",
+        "link": "#6B5560"
+      },
+      "dark": {
+        "canvas": "#3E3239",
+        "surface": "#6B5560",
+        "raised": "#6B5560",
+        "text": "#F7EFE7",
+        "secondary": "#E8D2C4",
+        "primary": "#E8D2C4",
+        "onPrimary": "#3E3239",
+        "hover": "#F7EFE7",
+        "pressed": "#E8D2C4",
+        "borderStrong": "#E8D2C4",
+        "borderSubtle": "#9E8189",
+        "focus": "#E8D2C4",
+        "selected": "#E8D2C4",
+        "onSelected": "#3E3239",
+        "subtle": "#6B5560",
+        "onSubtle": "#F7EFE7",
+        "link": "#E8D2C4"
+      }
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight & Fog",
+      "colors": [
+        "#06141B",
+        "#11212D",
+        "#253745",
+        "#4A5C6A",
+        "#9BA8AB",
+        "#CCD0CF"
+      ],
+      "sources": [
+        11,
+        13
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.1385,
+          1.5228,
+          2.6967,
+          7.6385,
+          12.0064
+        ],
+        [
+          1.1385,
+          1.0,
+          1.3375,
+          2.3687,
+          6.7092,
+          10.5457
+        ],
+        [
+          1.5228,
+          1.3375,
+          1.0,
+          1.7709,
+          5.016,
+          7.8844
+        ],
+        [
+          2.6967,
+          2.3687,
+          1.7709,
+          1.0,
+          2.8325,
+          4.4522
+        ],
+        [
+          7.6385,
+          6.7092,
+          5.016,
+          2.8325,
+          1.0,
+          1.5718
+        ],
+        [
+          12.0064,
+          10.5457,
+          7.8844,
+          4.4522,
+          1.5718,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#06141B",
+          "luminance": 0.006182,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#06141B",
+            "ratio": 1.1236,
+            "display": "1.12:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#06141B",
+            "ratio": 18.6894,
+            "display": "18.69:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#11212D",
+          "luminance": 0.013963,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#11212D",
+            "ratio": 1.2793,
+            "display": "1.28:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#11212D",
+            "ratio": 16.4156,
+            "display": "16.42:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#253745",
+          "luminance": 0.035554,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#253745",
+            "ratio": 1.7111,
+            "display": "1.71:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#253745",
+            "ratio": 12.273,
+            "display": "12.27:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#4A5C6A",
+          "luminance": 0.101507,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#4A5C6A",
+            "ratio": 3.0301,
+            "display": "3.03:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#4A5C6A",
+            "ratio": 6.9304,
+            "display": "6.93:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#9BA8AB",
+          "luminance": 0.379141,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#9BA8AB",
+            "ratio": 8.5828,
+            "display": "8.58:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#9BA8AB",
+            "ratio": 2.4467,
+            "display": "2.45:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#CCD0CF",
+          "luminance": 0.624541,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#CCD0CF",
+            "ratio": 13.4908,
+            "display": "13.49:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#CCD0CF",
+            "ratio": 1.5566,
+            "display": "1.56:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Focused / technical",
+      "use": "Developer tools, analytics, finance UI",
+      "companion": "rose",
+      "light": {
+        "canvas": "#CCD0CF",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#06141B",
+        "secondary": "#253745",
+        "primary": "#253745",
+        "onPrimary": "#CCD0CF",
+        "hover": "#11212D",
+        "pressed": "#06141B",
+        "borderStrong": "#4A5C6A",
+        "borderSubtle": "#9BA8AB",
+        "focus": "#253745",
+        "selected": "#11212D",
+        "onSelected": "#CCD0CF",
+        "subtle": "#9BA8AB",
+        "onSubtle": "#06141B",
+        "link": "#253745"
+      },
+      "dark": {
+        "canvas": "#06141B",
+        "surface": "#11212D",
+        "raised": "#253745",
+        "text": "#CCD0CF",
+        "secondary": "#9BA8AB",
+        "primary": "#9BA8AB",
+        "onPrimary": "#06141B",
+        "hover": "#CCD0CF",
+        "pressed": "#9BA8AB",
+        "borderStrong": "#9BA8AB",
+        "borderSubtle": "#253745",
+        "focus": "#9BA8AB",
+        "selected": "#9BA8AB",
+        "onSelected": "#06141B",
+        "subtle": "#253745",
+        "onSubtle": "#CCD0CF",
+        "link": "#9BA8AB"
+      }
+    },
+    {
+      "id": "plum",
+      "name": "Plum & Lilac",
+      "colors": [
+        "#17121D",
+        "#302538",
+        "#51405F",
+        "#796487",
+        "#B09BB8",
+        "#E8DDEB"
+      ],
+      "sources": [
+        12
+      ],
+      "matrix": [
+        [
+          1.0,
+          1.2689,
+          1.9711,
+          3.4941,
+          7.212,
+          14.0032
+        ],
+        [
+          1.2689,
+          1.0,
+          1.5534,
+          2.7537,
+          5.6837,
+          11.0359
+        ],
+        [
+          1.9711,
+          1.5534,
+          1.0,
+          1.7726,
+          3.6588,
+          7.1041
+        ],
+        [
+          3.4941,
+          2.7537,
+          1.7726,
+          1.0,
+          2.064,
+          4.0077
+        ],
+        [
+          7.212,
+          5.6837,
+          3.6588,
+          2.064,
+          1.0,
+          1.9417
+        ],
+        [
+          14.0032,
+          11.0359,
+          7.1041,
+          4.0077,
+          1.9417,
+          1.0
+        ]
+      ],
+      "stops": [
+        {
+          "id": "S1",
+          "hex": "#17121D",
+          "luminance": 0.007035,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#17121D",
+            "ratio": 1.1407,
+            "display": "1.14:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#17121D",
+            "ratio": 18.4098,
+            "display": "18.41:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S2",
+          "hex": "#302538",
+          "luminance": 0.02237,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#302538",
+            "ratio": 1.4474,
+            "display": "1.45:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#302538",
+            "ratio": 14.5087,
+            "display": "14.51:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S3",
+          "hex": "#51405F",
+          "luminance": 0.062423,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#51405F",
+            "ratio": 2.2485,
+            "display": "2.25:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#51405F",
+            "ratio": 9.3397,
+            "display": "9.34:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S4",
+          "hex": "#796487",
+          "luminance": 0.149286,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#796487",
+            "ratio": 3.9857,
+            "display": "3.99:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#796487",
+            "ratio": 5.2688,
+            "display": "5.27:1",
+            "normal_AA": true,
+            "normal_AAA": false,
+            "large_AA_and_nontext": true
+          },
+          "recommended_label": "#FFFFFF"
+        },
+        {
+          "id": "S5",
+          "hex": "#B09BB8",
+          "luminance": 0.361335,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#B09BB8",
+            "ratio": 8.2267,
+            "display": "8.23:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#B09BB8",
+            "ratio": 2.5527,
+            "display": "2.55:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        },
+        {
+          "id": "S6",
+          "hex": "#E8DDEB",
+          "luminance": 0.748669,
+          "black": {
+            "role": "",
+            "foreground": "#000000",
+            "background": "#E8DDEB",
+            "ratio": 15.9734,
+            "display": "15.97:1",
+            "normal_AA": true,
+            "normal_AAA": true,
+            "large_AA_and_nontext": true
+          },
+          "white": {
+            "role": "",
+            "foreground": "#FFFFFF",
+            "background": "#E8DDEB",
+            "ratio": 1.3147,
+            "display": "1.31:1",
+            "normal_AA": false,
+            "normal_AAA": false,
+            "large_AA_and_nontext": false
+          },
+          "recommended_label": "#000000"
+        }
+      ],
+      "notes": [
+        "The original S3 does not support both normal primary and secondary text in dark mode; this recipe deliberately reuses S2 for raised surfaces. All exported role pairs pass.",
+        "Light secondary text does not pass on surfaceMuted; use primary text Stop 1 there.",
+        "Subtle borders and adjacent surface steps are decorative; use borderStrong when a control boundary must be perceived.",
+        "Hover/pressed differences need not contrast 3:1 with their previous state; all foreground/background and adjacent essential indicators must still pass.",
+        "Use a focus outline with an offset exposing canvas/surface; verify against every adjacent color, especially a primary button.",
+        "Dark primaryPressed intentionally retains its fill; add inset/position feedback or derive and recheck a darker tint instead of using unchecked Stop 4."
+      ],
+      "mood": "Reflective / creative",
+      "use": "Music, learning, writing",
+      "companion": "olive",
+      "light": {
+        "canvas": "#E8DDEB",
+        "surface": "#FFFFFF",
+        "raised": "#FFFFFF",
+        "text": "#17121D",
+        "secondary": "#51405F",
+        "primary": "#51405F",
+        "onPrimary": "#E8DDEB",
+        "hover": "#302538",
+        "pressed": "#17121D",
+        "borderStrong": "#796487",
+        "borderSubtle": "#B09BB8",
+        "focus": "#51405F",
+        "selected": "#302538",
+        "onSelected": "#E8DDEB",
+        "subtle": "#B09BB8",
+        "onSubtle": "#17121D",
+        "link": "#51405F"
+      },
+      "dark": {
+        "canvas": "#17121D",
+        "surface": "#302538",
+        "raised": "#302538",
+        "text": "#E8DDEB",
+        "secondary": "#B09BB8",
+        "primary": "#B09BB8",
+        "onPrimary": "#17121D",
+        "hover": "#E8DDEB",
+        "pressed": "#B09BB8",
+        "borderStrong": "#B09BB8",
+        "borderSubtle": "#51405F",
+        "focus": "#B09BB8",
+        "selected": "#B09BB8",
+        "onSelected": "#17121D",
+        "subtle": "#302538",
+        "onSubtle": "#E8DDEB",
+        "link": "#B09BB8"
+      }
+    }
+  ],
+  "fonts": [
+    {
+      "id": "inter",
+      "name": "Inter",
+      "heading": "Inter",
+      "body": "Inter",
+      "mono": "IBM Plex Mono",
+      "role": "Neutral default for app interfaces; 400 / 500 / 600 / 700."
+    },
+    {
+      "id": "jakarta",
+      "name": "Plus Jakarta Sans",
+      "heading": "Plus Jakarta Sans",
+      "body": "Inter",
+      "mono": "IBM Plex Mono",
+      "role": "Friendly geometric headings with a neutral reading face."
+    },
+    {
+      "id": "editorial",
+      "name": "Source Serif 4 + Inter",
+      "heading": "Source Serif 4",
+      "body": "Inter",
+      "mono": "IBM Plex Mono",
+      "role": "Editorial headings and reading; keep compact controls in Inter."
+    },
+    {
+      "id": "plex",
+      "name": "IBM Plex Sans + Mono",
+      "heading": "IBM Plex Sans",
+      "body": "IBM Plex Sans",
+      "mono": "IBM Plex Mono",
+      "role": "Technical products and numeric data; use mono sparingly."
+    },
+    {
+      "id": "manrope",
+      "name": "Manrope",
+      "heading": "Manrope",
+      "body": "Manrope",
+      "mono": "IBM Plex Mono",
+      "role": "Contemporary geometric interface; use bundled Google OFL version."
+    },
+    {
+      "id": "system",
+      "name": "System UI",
+      "heading": "system-ui",
+      "body": "system-ui",
+      "mono": "ui-monospace",
+      "role": "Platform-native fallback and lowest loading cost."
+    }
+  ],
+  "semantic": {
+    "light": {
+      "success": {
+        "fg": "#166534",
+        "bg": "#DCFCE7",
+        "ratio": 6.492383151689474
+      },
+      "warning": {
+        "fg": "#854D0E",
+        "bg": "#FEF3C7",
+        "ratio": 6.152649034202301
+      },
+      "error": {
+        "fg": "#991B1B",
+        "bg": "#FEE2E2",
+        "ratio": 6.802728419777387
+      },
+      "info": {
+        "fg": "#1E40AF",
+        "bg": "#DBEAFE",
+        "ratio": 7.149175584004714
+      }
+    },
+    "dark": {
+      "success": {
+        "fg": "#86EFAC",
+        "bg": "#052E16",
+        "ratio": 10.615837047353068
+      },
+      "warning": {
+        "fg": "#FDE68A",
+        "bg": "#422006",
+        "ratio": 11.702707023213165
+      },
+      "error": {
+        "fg": "#FCA5A5",
+        "bg": "#450A0A",
+        "ratio": 8.5056232599572
+      },
+      "info": {
+        "fg": "#93C5FD",
+        "bg": "#172554",
+        "ratio": 8.148948989592276
+      }
+    }
+  }
+}

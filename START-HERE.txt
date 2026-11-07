@@ -1,0 +1,112 @@
+CHROMATIC ATLAS — COLOR & TYPE REFERENCE
+Playground 2.0 • Native atlas 1.0 • 8 November 2026
+
+Open color-theme-playground.html in a browser for a quick comparison.
+The HTML is self-contained: scripts, palette data and fonts work offline.
+For predictable browser storage, use the local server described in DEPLOY.txt.
+
+PLAYGROUND
+Choose one of 12 color families, six typography directions, and a light, dark
+or side-by-side view. Switch between Dashboard, Shopping, Reading and Mobile
+planner templates to judge the same theme in different app contexts.
+Custom dropdown menus show full option labels and support arrow keys, Home/End,
+typing to jump, Enter to select, and Escape to close.
+
+Theme builder edits 17 semantic color roles independently in light and dark.
+Use the picker or enter an opaque #RGB or #RRGGBB value. Undo restores earlier
+theme values; Reset this mode restores the selected mode's original recipe.
+Original source swatches remain unchanged.
+
+Automatic contrast audit checks 66 relationships: 33 in each mode. It reports
+failures as colors change and offers measured, optional fixes. A suggested
+change must pass all listed relationships involving that token in that mode.
+Some combinations require changing more than one role; no safe single-token
+suggestion is shown in that case. Use Undo to reverse an applied change.
+
+Named presets store both modes, typography and the screen template. Save a new
+preset, load one, or change its name/values and Update loaded preset. Export a
+preset or the full library for a portable backup; Import presets adds validated
+JSON files. The library allows 50 presets and imports up to 250,000 bytes.
+
+Working drafts and named presets use localStorage in this browser. They are
+not synced across devices, browser profiles, file paths or website origins.
+Clearing site data removes them. If storage is blocked or full, editing remains
+available in the tab and a notice recommends exporting a backup.
+
+Components shows buttons and states, forms, tabs, tables, charts, progress,
+feedback messages and dialogs in the selected theme. Sample interactions are
+UI demonstrations; they do not send invitations, process orders or save accounts.
+
+Color lab checks arbitrary foreground/background pairs, shows the original
+source-color matrix, and exports current CSS or implementation token JSON.
+Use Export current preset in Theme builder for files you want to import later.
+Implementation JSON includes current contrast results; CSS includes font stacks
+but does not embed the font binaries for your own app.
+
+EDITABLE DESIGN REFERENCE
+Open chromatic-atlas.figcraft in FigCraft. Its 21 pages contain 12 palette sheets,
+24 light/dark recipes, 284 color variables in 14 collections, 24 reusable primary
+button components and 8 typography styles. Shapes, text, samples and matrices
+are native editable layers. This original atlas is unchanged by playground 2.0;
+browser edits do not automatically update the FigCraft file.
+
+The guide preserves the printed hex values from the 14 supplied screenshots:
+12 distinct families, 72 source slots and 71 unique hex colors. Images 11/13
+repeat Midnight; images 10/14 repeat Rose. Caramel and Clay remain distinct.
+Values are not sampled from gradients or shadows. White is an added light
+surface; semantic status colors are a separate extension.
+
+FILES
+src/: editable HTML template, styles, core color logic, UI and screen templates.
+build-site.py: embeds source, tokens, fonts and license notices into the HTML.
+tests/: dependency-free Node tests for color logic and workbench regressions.
+theme-tokens.json: original palettes, light/dark roles, typography and status pairs.
+theme-tokens.css: all 12 original palettes via data-palette and data-theme.
+                  JSON camelCase becomes CSS kebab-case, for example
+                  onPrimary -> --on-primary; borderStrong -> --border-strong.
+all-color-pairs.csv: 5,041 directed combinations of the 71 unique source colors.
+contrast-audit.json: original full-precision role checks and source matrices.
+figcraft-variables.json: exported native variables for import into another file.
+playground-audit.json: expanded 792 original-palette relationships used by the live audit.
+verification.json: verification results and their limits.
+sources-and-guidance.json: primary references and additional guidance.
+previews/: original native page previews numbered 00–20.
+DEPLOY.txt: build, local preview and static hosting instructions.
+
+FONTS
+Inter; Plus Jakarta Sans + Inter; Manrope; Source Serif 4 + Inter;
+IBM Plex Sans + Mono; and System UI are available in the playground.
+Bundled font copies are in fonts/ with licenses and metadata in font-licenses/.
+Preserve the license notices when shipping fonts in your own app.
+The native atlas uses installed Inter, Plus Jakarta Sans, Georgia and Menlo.
+Georgia/Menlo specimens are labeled as native substitutes for Source Serif 4
+and IBM Plex. The HTML shows the actual bundled choices. No fonts were installed
+globally by this task.
+
+HOW TO REUSE
+1. Pick a color family and typography direction; test more than one template.
+2. Use semantic roles inside components, keeping foreground/background pairs
+   together, especially primary/onPrimary and selected/onSelected.
+3. Use borderStrong for essential control edges; borderSubtle is decorative.
+4. Customize each mode separately. Do not mechanically invert light colors.
+5. Review contrast failures, component states and the mobile preview.
+6. Export CSS/tokens for implementation and a preset for future editing.
+7. In FigCraft, select a Theme collection and Light/Dark mode. Button components
+   pin their named mode; reset that explicit mode to Auto to inherit a container.
+
+VALIDATION SCOPE
+Ratios use opaque sRGB values and full precision before display rounding.
+All 792 original relationships in the expanded live audit pass their thresholds
+(12 palettes × 66 checks). The original atlas audit contains 480 theme-role checks;
+all pass, as do its 8 functional status text/background pairs.
+Some source combinations intentionally fail; the matrix and checker show them.
+A contrast pass is not a claim of full WCAG conformance. Gradients, transparency,
+image backgrounds, new component combinations, text sizes, focus behavior and
+translations require their own checks. Some raised surfaces and pressed fills
+intentionally reuse colors; use structure and tactile feedback as well.
+
+
+LICENSE
+Original project code and documentation are released under the MIT License; see LICENSE.
+The standalone HTML includes the MIT notice. Bundled fonts retain their separate
+SIL Open Font License notices in font-licenses/ and inside the HTML.

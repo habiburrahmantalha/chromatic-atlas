@@ -1,0 +1,32 @@
+/* Custom popup menus keep long labels readable and leave room around the chevron. */
+.atlas-select{display:block;position:relative;min-width:0;max-width:100%;width:100%}
+.atlas-select>select[hidden]{display:none!important}
+.atlas-select-trigger{position:relative;display:flex;align-items:center;width:100%;min-height:40px;padding:10px 42px 10px 12px;border:1px solid #91A194;border-radius:8px;background:#FFF;color:#17251F;font-family:var(--ui);font-size:12px;font-weight:400;text-align:left;line-height:1.35;transition:border-color .15s,background-color .15s;cursor:pointer}
+.atlas-select-trigger:hover{background:#F5F7F2;border-color:#526158}
+.atlas-select-trigger[aria-expanded=true]{border-color:#344B3A;background:#F5F7F2;box-shadow:0 0 0 1px #344B3A}
+.atlas-select-trigger:focus-visible{outline:3px solid #477C8B;outline-offset:3px}
+.atlas-select-trigger:disabled{color:#526158;background:#F5F7F2;border-style:dashed;cursor:not-allowed}
+.atlas-select-value{display:block;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.atlas-select-chevron{position:absolute;right:14px;top:50%;display:flex;transform:translateY(-50%);pointer-events:none}
+.atlas-select-trigger[aria-expanded=true] .atlas-select-chevron{transform:translateY(-50%) rotate(180deg)}
+.control .atlas-select{width:158px}
+.control .atlas-select[data-select=font-select]{width:260px}
+.control .atlas-select[data-select=feedback-select]{width:185px}
+.audit-filters .atlas-select{width:145px}
+.preset-bar .atlas-select{width:100%}
+.atlas-select-popup{position:fixed;z-index:1000;margin:0;padding:6px;overflow-y:auto;overscroll-behavior:contain;border:1px solid #91A194;border-radius:12px;background:#FFF;color:#17251F;box-shadow:0 14px 38px #17251F24,0 3px 8px #17251F10;font-family:var(--ui);font-size:13px;line-height:1.4;scroll-padding:6px;scrollbar-width:thin}
+.atlas-select-popup[hidden]{display:none}
+.atlas-select-option{display:flex;gap:16px;align-items:center;min-height:44px;padding:11px 12px;border:1px solid transparent;border-radius:7px;cursor:pointer}
+.atlas-select-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:3px;overflow-wrap:anywhere;white-space:normal}
+.atlas-select-option-title{font-weight:500}
+.atlas-select-option-detail{font-size:11px;line-height:1.5;color:#526158;font-weight:400}
+.atlas-select-check{width:18px;flex:0 0 18px;font-size:16px;font-weight:600;text-align:center;color:#344B3A}
+.atlas-select-option[aria-selected=true]{background:#E9EEE7}
+.atlas-select-option[aria-selected=true] .atlas-select-option-title{font-weight:650}
+.atlas-select-option.is-active{border-color:#344B3A;background:#F2F5EE;box-shadow:inset 0 0 0 1px #344B3A}
+.atlas-select-option[aria-disabled=true]{color:#6F786F;cursor:not-allowed}
+.atlas-select-option[aria-disabled=true] .atlas-select-option-detail{color:inherit}
+@media(max-width:1190px){.control .atlas-select[data-select=font-select]{width:220px}}
+@media(max-width:650px){.toolbar-left .control{min-width:0;flex-basis:140px}.toolbar-left .control .atlas-select{width:100%;max-width:100%}.atlas-select-trigger{font-size:11px;min-height:42px}.atlas-select-popup{font-size:13px}.atlas-select-option{min-height:48px;padding:12px}.audit-filters .atlas-select{width:135px}}
+@media(prefers-reduced-motion:reduce){.atlas-select-trigger{transition:none}}
+@media(forced-colors:active){.atlas-select-trigger,.atlas-select-popup{border-color:ButtonText}.atlas-select-option.is-active{outline:2px solid Highlight;outline-offset:-2px}.atlas-select-option[aria-selected=true]{border-color:Highlight}.atlas-select-check{color:ButtonText}}

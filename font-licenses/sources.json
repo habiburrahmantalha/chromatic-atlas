@@ -1,0 +1,97 @@
+[
+  {
+    "file": "SourceSerif4.ttf",
+    "bytes": 1209508,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+    "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b"
+  },
+  {
+    "file": "IBMPlexSans.ttf",
+    "bytes": 537244,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3"
+  },
+  {
+    "file": "IBMPlexMono.ttf",
+    "bytes": 135580,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+    "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+  },
+  {
+    "file": "Manrope.ttf",
+    "bytes": 164700,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+  },
+  {
+    "file": "Inter-OFL.txt",
+    "bytes": 4377,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+  },
+  {
+    "file": "SourceSerif4-OFL.txt",
+    "bytes": 4400,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/OFL.txt",
+    "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
+  },
+  {
+    "file": "IBMPlexSans-OFL.txt",
+    "bytes": 4456,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+  },
+  {
+    "file": "IBMPlexMono-OFL.txt",
+    "bytes": 4456,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/OFL.txt",
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+  },
+  {
+    "file": "Manrope-OFL.txt",
+    "bytes": 4387,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+    "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+  },
+  {
+    "file": "PlusJakartaSans.ttf",
+    "bytes": 176288,
+    "source": "Local copy of the upstream Google Fonts release; version and checksum recorded below.",
+    "url": "https://github.com/google/fonts/tree/main/ofl/plusjakartasans",
+    "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
+    "names": [
+      [
+        1,
+        "Plus Jakarta Sans"
+      ],
+      [
+        2,
+        "Regular"
+      ],
+      [
+        5,
+        "Version 2.071;gftools[0.9.30]"
+      ]
+    ],
+    "axes": [
+      [
+        "wght",
+        200.0,
+        400.0,
+        800.0
+      ]
+    ],
+    "version": "2.071;gftools[0.9.30]",
+    "license_file": "PlusJakartaSans-OFL.txt",
+    "weight_range": [
+      200,
+      800
+    ]
+  },
+  {
+    "file": "PlusJakartaSans-OFL.txt",
+    "bytes": 4402,
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/OFL.txt",
+    "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99"
+  }
+]
